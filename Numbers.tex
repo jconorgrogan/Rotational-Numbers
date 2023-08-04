@@ -1,87 +1,26 @@
 \documentclass{article}
-\begin{document}
-
-\section*{Hierarchical Structure of Numbers}
-
-\subsection*{1. Level 0: The Infinite Expanse}
-\textbf{Entity}: Infinity ($\infty$) \\
-\textbf{Description}: The foundational entity. This is the undivided, raw infinite space. All other entities emerge from divisions of this space.
-
-\subsection*{2. Level 1: Primary Divisions - Natural Numbers}
-\textbf{Entities}: $\{1, 2, 3, \ldots\}$ \\
-\textbf{Description}: Divisions of the infinite expanse. Each natural number $n$ represents $\infty$ divided into $n$ parts. For instance, the number 2 represents two infinite entities with a conceptual division between them.
-
-\subsection*{3. Level 2: Secondary Divisions - Rational Numbers}
-\textbf{Entities}: Ratios of natural numbers (excluding whole numbers). \\
-\textbf{Description}: Further divisions of the primary divisions. A rational $\frac{a}{b}$ (where $a$ and $b$ are naturals and $a < b$) represents the infinite space corresponding to $a$ being divided by the infinite space corresponding to $b$.
-
-\subsection*{4. Level 3: Tertiary Divisions - Irrational Algebraic Numbers}
-\textbf{Entities}: Roots of polynomials with integer coefficients that aren't rational. \\
-\textbf{Description}: These numbers emerge when considering algebraic equations involving the primary and secondary divisions. For example, $\sqrt{2}$ is not rational but arises from considering the square root of the primary division representing 2.
-
-\subsection*{5. Level 4: The Continuum - Transcendental Numbers}
-\textbf{Entities}: Numbers that aren't roots of any polynomial with integer coefficients. \\
-\textbf{Description}: These numbers, like $\pi$ and $e$, can't be derived from basic operations on the primary, secondary, or tertiary divisions. They fill in the gaps, ensuring the number line is continuous. They might be seen as the result of infinitely intricate, non-algebraic processes on $\infty$.
-
-\subsection*{6. Level 5: Complex Numbers}
-\textbf{Entities}: Combinations of real numbers (from Levels 1-4) with imaginary units. \\
-\textbf{Description}: Introducing a new dimension orthogonal to the real number line. Each complex number $a + bi$ can be visualized as a point in this 2D space. The real part $a$ comes from the hierarchical divisions of $\infty$, while the imaginary part is a multiplication of $b$ with the imaginary unit.
-
-\subsection*{7. Level 6: Quaternions}
-\textbf{Entities}: Extensions of complex numbers with three imaginary units. \\
-\textbf{Description}: Quaternions introduce further dimensions. Each quaternion can be written as $a + bi + cj + dk$, where $a, b, c,$ and $d$ are real numbers derived from the divisions of $\infty$ and $i, j,$ and $k$ are the quaternion units.
-
-\subsection*{8. Level 7: Octonions}
-\textbf{Entities}: Further extensions with seven imaginary units. \\
-\textbf{Description}: Less commonly used but follow the pattern of increasing dimensions. Each octonion has a part that's a real number and parts that are multiples of the seven imaginary units.
-
-latex_code = r"""
-\documentclass{article}
 \usepackage{amsmath, amssymb}
 
 \begin{document}
-\title{The Geometry of Infinity: A Prime Perspective}
-\maketitle
 
-\noindent \textbf{Foundational Concept}: \\
-Infinity is the canvas upon which all mathematical structures exist. To derive meaning or structure from this vast expanse, one must introduce divisions or partitions. These divisions, when represented geometrically or topologically, yield insights into the nature of numbers, especially primes.
+\section*{Mathematical Descriptions}
 
-\section*{1. Divisions of Infinity}
-\begin{itemize}
-    \item Infinity, when divided by itself, yields unity: $\frac{\infty}{\infty} = 1$.
-    \item Dividing infinity by a natural number $n$ results in $n$ equidistant infinite segments or points. These divisions introduce structure and granularity to the infinite expanse.
-\end{itemize}
+\subsection*{Foundation}
+Mathematical entities emerge from infinity, denoted as \( \infty \). Consider \( \infty \) as a vector space over which all structures are spanned. Dividing or partitioning this infinite expanse, perhaps symbolically as segments \([0, \infty/n]\), gives rise to discernible mathematical substructures. Using geometric and topological spaces, such as the \( p \)-adic metric space, these partitions can elucidate number properties, like prime densities.
 
-\section*{2. Primes: The Pillars of Infinity}
-\begin{itemize}
-    \item Prime numbers, when used to divide infinity, produce unique geometric configurations in the infinite-dimensional space. Each prime introduces a distinct relational structure.
-    \begin{itemize}
-        \item E.g., $\frac{\infty}{2}$ introduces a fundamental duality.
-        \item $\frac{\infty}{3}$ introduces a ternary configuration.
-    \end{itemize}
-\end{itemize}
+\subsection*{Divisions of Infinity}
+Partitioning infinity can be visually mapped to the unit circle \( S^1 \) in the complex plane, where each partition corresponds to an \( e^{i\theta} \). This provides a tangible representation to the infinite concept.
 
-\section*{3. Composites: Layered Configurations}
-\begin{itemize}
-    \item Composite numbers create configurations that are combinations or iterations of the configurations of their prime factors.
-    \begin{itemize}
-        \item E.g., $\frac{\infty}{4}$ is seen as a "dual duality" or a repeated binary division.
-    \end{itemize}
-\end{itemize}
+\subsection*{Role of Primes}
+Let \( p \) be a prime. Infinity divided by primes creates spaces that can be embedded in infinite-dimensional Hilbert spaces. For instance, \( \infty \) partitioned by 2 or 3 might introduce structures that resemble binary trees or ternary Cantor sets, respectively.
 
-\section*{4. Geometric Symmetry and Primes}
-\begin{itemize}
-    \item When the infinite segments resulting from a division are placed on a circle's circumference, primes exhibit maximal and unique symmetries not seen in composites.
-    \item Primes introduce configurations that are invariant under specific geometric transformations in the infinite-dimensional space.
-    \item Composites, on the other hand, exhibit symmetries that are reducible to those of their prime factors.
-\end{itemize}
+\subsection*{Composites and Their Geometry}
+Let a composite \( c \) have prime factorization \( p_1^{n_1}p_2^{n_2}\ldots \). Geometrically, a composite can be seen as a product space of its prime components' structures. The number 4, or \( 2^2 \), induces a "dual duality", visualized as a bifurcation of a binary tree.
 
-\section*{5. Mathematical Connections}
-\begin{itemize}
-    \item \textbf{Number Theory}: Primes are traditionally the building blocks of natural numbers. This theory offers a geometric perspective on their indivisibility and uniqueness.
-    \item \textbf{Topology}: The infinite-dimensional space and the configurations introduced by divisions hint at a topological interpretation of numbers.
-    \item \textbf{Fourier Analysis}: The symmetries exhibited by primes on a circle might have representations using Fourier methods, connecting continuous and discrete mathematics.
-    \item \textbf{Computational Geometry}: The quest to detect unique symmetries in large numbers can employ methods from computational geometry, potentially leading to efficient algorithms for prime prediction.
-\end{itemize}
+\subsection*{Geometric Symmetry}
+Representing these partitions as radial lines or chords on \( S^1 \), primes like \( p \) introduce symmetry groups, \( G_p \), that possess unique maximal symmetries. These can be considered under group actions that preserve certain structures, like a dihedral group action. Composites, however, give rise to symmetries that are direct products of their prime factors' symmetry groups.
+
+\subsection*{Angle Doubling and Wave Dynamics}
+The transformation \( f(\theta) = 2\theta \mod 2\pi \) when acted on functions, say \( g(e^{i\theta}) \), on the unit circle produces modulated versions. These can be seen as wavelets, forming intricate patterns due to interference, akin to wave superposition. The frequency doubling transformation, in the context of Fourier analysis, acts as a dilation operator on Fourier modes, amplifying certain spectral components.
 
 \end{document}
