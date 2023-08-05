@@ -6,16 +6,8 @@
 Euler's identity, 
 <img width="86" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/b363a09e-bf9d-4105-be0f-85360899e3be">
 , is often hailed as one of the most beautiful equations in mathematics, linking five fundamental constants: 
-�
-e, 
-�
-i, 
-�
-π, 
-1
-1, and 
-0
-0.
+<img width="99" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/94caceb3-71ef-40d6-8af6-bd0b51593b82">
+
 
 Exponential, 
 �
