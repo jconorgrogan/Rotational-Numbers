@@ -1,15 +1,25 @@
 
+
 ## 1. Introduction
 
-The Rotational Number System (RNS) offers a novel visualization of numbers in a circular construct. This system represents each natural number \( n \) as \( n \) equidistant nodes positioned on a circle. The objective is to redefine mathematical operations in this rotational context and draw parallels with existing mathematical constructs.
+The Rotational Number System (RNS) provides a unique circular representation for natural numbers. In RNS, each natural number \( n \) is depicted by a specific node on a circle, with all numbers being equidistant from each other. The objective is to explore mathematical operations within this rotational framework and draw analogies with traditional mathematical systems.
 
-## 2. Rotational Identity
+## 2. Positional Representation in RNS
 
-Given a natural number \( n \), its rotational identity in the RNS is defined by its representation on the unit circle in the complex plane. Mathematically, this is expressed as:
+Every natural number \( n \) is assigned a unique position on the unit circle. The position of the number \( n \) is determined by dividing the circle into \( n \) equidistant nodes. The position is given by the angle:
 
-\[ R(n) = e^{\frac{2\pi i}{n}} \]
+\[ \theta(n) = \frac{2\pi(n-1)}{N} \]
 
-This equation yields a root of unity for every natural number.
+Where \( N \) is the maximum number to be represented on the circle. The subtracting 1 ensures that the number 1 starts from \( 0 \) degrees or radians.
+
+## 3. Rotational Identity
+
+The rotational identity of a number in the RNS is its representation on the unit circle in the complex plane:
+
+\[ R(n) = e^{\frac{2\pi i (n-1)}{N}} \]
+
+This formula provides a root of unity for every natural number.
+
 
 **Observations**:
 - For primes, the roots of unity are trivial (i.e., 1 and -1) until \( n \) is reached.
