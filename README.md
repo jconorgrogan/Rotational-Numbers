@@ -1,7 +1,5 @@
 # Rotational Number Theory
 
-# Rotational Number Theory
-
 ## 1. Introduction
 
 The Rotational Number System (RNS) offers a novel visualization of numbers in a circular construct. This system represents each natural number \( n \) as \( n \) equidistant nodes positioned on a circle. The objective is to redefine mathematical operations in this rotational context and draw parallels with existing mathematical constructs.
@@ -66,4 +64,3 @@ When representing a wave as a sum of its Fourier components, many of these compo
 - **Quantization**: By grouping nearby points in the RNS, we can quantize the representation space. Instead of representing each point precisely, points that are close to each other can be represented by a common value. This further compresses the wave representation.
 - **Efficient Storage**: The RNS representation can be stored using two arrays: one for the significant magnitudes and another for the associated phases. By discarding negligible components and using quantization, the size of these arrays can be significantly reduced.
 - **Reconstruction**: Despite the compression, the wave can be reconstructed with high fidelity by summing up the retained Fourier components. The RNS ensures that the compressed representation captures the most significant features of the wave.
-
