@@ -20,15 +20,18 @@ def number_properties_harmonic(number):
     if integer_part > 1:
         prime_factors.append(integer_part)
     
-    # Amplitude is the number of prime factors (with repetition)
-    amplitude = len(prime_factors)
+    # Amplitude is the product of prime factors
+    amplitude = np.prod(prime_factors)
     
     # Phase based on modulo 2pi, with an adjustment based on the fractional part
     phase = (number % 1) * (2 * np.pi)
     
-    return amplitude, phase, prime_factors
+    # Polarization
+    polarization = (-1)**(integer_part % 2)
+    
+    return amplitude, phase, polarization, prime_factors
 
-def number_to_waveform_prime_influence(number, rotation, amplitude, prime_factors, t):
+def number_to_waveform_prime_influence(number, rotation, amplitude, polarization, prime_factors, t):
     """Translate a number into a waveform influenced by its prime factors."""
 
     # Start with a base waveform of zeros
@@ -41,31 +44,25 @@ def number_to_waveform_prime_influence(number, rotation, amplitude, prime_factor
         # Add the wave to the current waveform (without damping)
         waveform += wave
 
+    # Apply polarization
+    waveform *= polarization
+
     return waveform
 
 def plot_waveform_prime_influence(number, t):
     """Generate and plot a waveform corresponding to a number influenced by its prime factors."""
 
-    amplitude, rotation, prime_factors = number_properties_harmonic(number)
+    amplitude, rotation, polarization, prime_factors = number_properties_harmonic(number)
     
     # Generate the corresponding waveform
-    waveform = number_to_waveform_prime_influence(number, rotation, amplitude, prime_factors, t)
+    waveform = number_to_waveform_prime_influence(number, rotation, amplitude, polarization, prime_factors, t)
 
     # Plot the waveform
     plt.figure(figsize=(6, 4))
     plt.plot(t, waveform)
-    plt.title('Waveform for Number = {}, Rotation = {:.2f}, Amplitude = {}, Prime Factors = {}'.format(number, rotation, amplitude, prime_factors))
+    plt.title('Waveform for Number = {}, Rotation = {:.2f}, Amplitude = {}, Polarization = {}, Prime Factors = {}'.format(number, rotation, amplitude, polarization, prime_factors))
     plt.xlabel('Time')
     plt.ylabel('Amplitude')
-    plt.grid(True)
-
-    # Plot the RNS
-    plt.figure(figsize=(6, 4))
-    angles = [2 * np.pi * (n - 1) / number for n in range(1, number + 1)]
-    plt.scatter([np.cos(a) for a in angles], [np.sin(a) for a in angles])
-    plt.title('RNS for Number = {}'.format(number))
-    plt.xlabel('x')
-    plt.ylabel('y')
     plt.grid(True)
 
 # Define a time array
