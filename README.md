@@ -73,3 +73,17 @@ When representing a wave as a sum of its Fourier components, many of these compo
 - **Quantization**: By grouping nearby points in the RNS, we can quantize the representation space. Instead of representing each point precisely, points that are close to each other can be represented by a common value. This further compresses the wave representation.
 - **Efficient Storage**: The RNS representation can be stored using two arrays: one for the significant magnitudes and another for the associated phases. By discarding negligible components and using quantization, the size of these arrays can be significantly reduced.
 - **Reconstruction**: Despite the compression, the wave can be reconstructed with high fidelity by summing up the retained Fourier components. The RNS ensures that the compressed representation captures the most significant features of the wave.
+
+  | Operator | Mathematical Basis | Effect on Nodes | Effect on Wave | Core Mathematical Components |
+|:--------:|:------------------:|:---------------:|:--------------:|:-----------------------------:|
+| Addition | Appending new nodes | Addition of new nodes and recalibration to maintain equidistance | Superposition of new wave | \( \theta(n) = \frac{2\pi(n-1)}{n+a} \) |
+| Subtraction | Removal of existing nodes | Removal of nodes and recalibration to maintain equidistance | Cancellation of the corresponding wave | \( \theta(n) = \frac{2\pi(n-1)}{n-a} \) |
+| Multiplication | Creating copies of the nodes and redistributing them around the circle | Repetition of nodes based on the multiplication factor; each copy rotated by an angle relative to the previous copy | Frequency modulation | \( \theta(n, k) = \frac{2\pi(n-1)}{a} + \frac{2\pi(k-1)}{b} \) |
+| Division | Inverse of multiplication | Redistribution of nodes based on the division factor; each copy rotated by an angle relative to the previous copy | Frequency demodulation | \( \theta(n, k) = \frac{2\pi(n-1)}{a} - \frac{2\pi(k-1)}{b} \) |
+| Fraction (Decimal) | Partial completion of circle | Placement of nodes less than a full circle | Phase modulation | \( \theta(n) = \frac{2\pi(n-1)}{n+\alpha} \) (where \( \alpha < 1 \)) |
+| Negation | Flipping of the nodes | Nodes flipped across the origin | Wave inversion (180 degree phase shift) | \( \theta(n) = -\frac{2\pi(n-1)}{n} \) |
+| Absolute value | Absolute value of nodes | All nodes moved to the positive half | Rectification (all positive wave) | \( \theta(n) = |\frac{2\pi(n-1)}{n}| \) |
+| Exponentiation | Spiral formation | Nodes are placed in an expanding spiral pattern | Progressive increase in frequency and amplitude | \( \theta(n) = r^{(n-1)}e^{2\pi i(n-1)/n} \) |
+| Logarithm | Inverse spiral formation | Nodes are placed in a contracting spiral pattern | Progressive decrease in frequency and amplitude | \( \theta(n) = \log(r^{(n-1)})e^{2\pi i(n-1)/n} \) |
+| Modulo | Folding back of nodes | Nodes beyond the modulo number are folded back | Wave wrapping at a specific frequency | \( \theta(n) = \frac{2\pi((n-1) \mod m)}{m} \) |
+
