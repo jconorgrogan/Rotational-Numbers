@@ -66,3 +66,50 @@ iπ operator),
 And then shift the resulting number by one node (with the "+1" operation).
 The result is that we return to the original position (0), in a demonstration of the cyclical nature of the Rotational Number System.
 
+---
+1. Exponential 
+�
+e: The number 
+�
+e is the base of natural logarithms and is deeply intertwined with the concept of growth and decay, derivatives, and integrals in calculus. In the context of the Rotational Number System, 
+�
+e can be seen as a scaling factor. When a number is multiplied by 
+�
+e, it could correspond to an expansion of the rotation circle. This perspective casts 
+�
+e as a transformative constant that influences the scale or "size" of rotations.
+
+2. Imaginary Unit 
+�
+i: In the 3D model of the Rotational Number System, 
+�
+i could be perceived as an operator that rotates the plane of rotation from the real (horizontal) plane to the imaginary (vertical) plane. In other words, 
+�
+i introduces a new dimension of rotation. This gives 
+�
+i a role as a dimension-switching operator.
+
+3. Pi 
+�
+π: The number 
+�
+π is the ratio of a circle's circumference to its diameter. In the Rotational Number System, 
+�
+π could be interpreted as a half-rotation operator. When a number is multiplied by 
+�
+π, it corresponds to a half-rotation in the chosen plane. This perspective emphasizes 
+�
+π as a rotational constant.
+
+4. Unity 
+1
+1: The number 
+1
+1 is the multiplicative identity in the standard number system. In the Rotational Number System, adding 
+1
+1 could be seen as a shifting operator that advances the rotational position of a number by one node. It acts as a unit step operator in the rotational context.
+
+5. Zero 
+0
+0: Zero is the additive identity in the standard number system. In the Rotational Number System, the position corresponding to zero could be seen as the origin or the starting point of rotations. When a rotation brings us back to this point, it signifies the completion of a full cycle or loop.
+
