@@ -1,4 +1,3 @@
-# Rotational Number Theory
 
 ## 1. Introduction
 
