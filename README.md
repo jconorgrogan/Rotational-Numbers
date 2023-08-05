@@ -85,9 +85,7 @@ $$| Operator | Mathematical Basis | Effect on Nodes | Effect on Wave | Core Math
 | Absolute value | Absolute value of nodes | All nodes moved to the positive half | Rectification (all positive wave) | $$ \theta(n) = |\frac{2\pi(n-1)}{n}| $$ |
 | Exponentiation | Spiral formation | Nodes are placed in an expanding spiral pattern | Progressive increase in frequency and amplitude | $$ \theta(n) = r^{(n-1)}e^{2\pi i(n-1)/n} $$ |
 | Logarithm | Inverse spiral formation | Nodes are placed in a contracting spiral pattern | Progressive decrease in frequency and amplitude | $$ \theta(n) = \log(r^{(n-1)})e^{2\pi i(n-1)/n} $$ |
-| Modulo | Folding back of nodes | Nodes beyond the modulo number are folded back | Wave wrapping at a specific frequency | $$ \theta(n) = \frac{2\pi((n-1) \mod m)}{m} $$ |
-$$
-
+| Modulo | Folding back of nodes | Nodes beyond the modulo number are folded back | Wave wrapping at a specific frequency | $$ \theta(n) = \frac{2\pi((n-1) \mod m)}{m} $$ |$$
 $$### Representation in the Complex Plane
 
 Each term in a Fourier series can be represented as a complex number leveraging Euler's formula:
