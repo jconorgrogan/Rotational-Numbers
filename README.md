@@ -87,3 +87,29 @@ When representing a wave as a sum of its Fourier components, many of these compo
 | Logarithm | Inverse spiral formation | Nodes are placed in a contracting spiral pattern | Progressive decrease in frequency and amplitude | \( \theta(n) = \log(r^{(n-1)})e^{2\pi i(n-1)/n} \) |
 | Modulo | Folding back of nodes | Nodes beyond the modulo number are folded back | Wave wrapping at a specific frequency | \( \theta(n) = \frac{2\pi((n-1) \mod m)}{m} \) |
 
+$$### Representation in the Complex Plane
+
+Each term in a Fourier series can be represented as a complex number leveraging Euler's formula:
+
+$$ e^{i\theta} = \cos(\theta) + i \sin(\theta) $$
+
+Thus, the Fourier series representation becomes:
+
+$$ f(t) = a_0 + \sum_{n=1}^{\infty} r_n e^{i(2\pi n f t + \phi_n)} $$
+
+Here, the magnitude \( r_n = \sqrt{a_n^2 + b_n^2} \) and the phase \( \phi_n = \arctan\left(\frac{b_n}{a_n}\right) \) define the position of each term \( r_n e^{i(2\pi n f t + \phi_n)} \) in the complex plane. In the RNS, this term is visualized as a rotation around the origin with radius \( r_n \) and angle \( \phi_n \). The concept of RNS presents a compelling way to visualize the operations involved in Fourier analysis.
+
+### Wave Compression using the RNS
+
+While representing a wave as a sum of its Fourier components, many components might have negligible magnitudes. These components correspond to nodes very close to the origin in the RNS.
+
+- **Sparse Representation**: The circular visualization in the RNS allows for an intuitive approach to identify and discard components that contribute minimally to the overall wave. This results in a sparse representation, retaining only the significant components. Hence, RNS offers a clear and efficient way to compress data.
+
+- **Quantization**: Grouping nearby nodes in the RNS permits a form of quantization of the representation space. Instead of precisely representing each node, nodes that are close to each other can be represented by a common value, thereby compressing the wave representation even further.
+
+- **Efficient Storage**: The RNS representation can be stored efficiently using two arrays: one for the significant magnitudes and another for the corresponding phases. The size of these arrays can be significantly reduced through the discarding of negligible components and the use of quantization.
+
+- **Reconstruction**: The compressed wave representation can be reconstructed with high fidelity by summing up the retained Fourier components. The RNS ensures that even with compression, the wave representation captures the most significant features of the wave.
+
+In essence, the use of RNS enhances the capability to manipulate and visualize waveforms in a more intuitive manner. The efficiency in representation and the ability to perform meaningful compression highlight the potential for broad application in wave analysis and data compression strategies.
+$$
