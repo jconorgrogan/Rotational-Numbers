@@ -11,6 +11,18 @@ Rotational Identity
 
 In this system, each number has a rotational identity, defined as the set of all positions its nodes can take on a circle during a full rotation. Primes have a unique characteristic in this context: their nodes, when rotated, do not align with their original positions until a complete rotation is done. Composite numbers show alignment before a complete rotation.
 
+**Waves and natural numbers**
+The wave's properties - its frequency, phase, and amplitude - can all be encoded in this single number in the Rotational Number System.
+
+
+The frequency of the wave, which dictates how many times the wave completes a cycle in a given period, could correspond to the number of nodes in the rotation. Higher frequency waves would translate to numbers with more nodes.
+
+The phase of the wave, which indicates the starting point of the wave cycle, could be represented as the rotational position of the number. A phase shift would correspond to a rotation of the number in the system.
+
+The amplitude of the wave, which determines the height or intensity of the wave, could be represented by a scaling of the rotation circle. Larger amplitudes would correspond to larger scales.
+
+This approach could potentially offer a new way to visualize and understand wave properties. Moreover, the operations on waves - such as addition, scaling, and shifting - can be intuitively understood as transformations on the corresponding numbers in the Rotational Number System.
+
 Euler's identity, 
 <img width="86" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/b363a09e-bf9d-4105-be0f-85360899e3be">
 , is often hailed as one of the most beautiful equations in mathematics, linking five fundamental constants: 
@@ -109,7 +121,8 @@ i a role as a dimension-switching operator.
 1
 1 could be seen as a shifting operator that advances the rotational position of a number by one node. It acts as a unit step operator in the rotational context.
 
-5. Zero 
+
+6. Zero 
 0
 0: Zero is the additive identity in the standard number system. In the Rotational Number System, the position corresponding to zero could be seen as the origin or the starting point of rotations. When a rotation brings us back to this point, it signifies the completion of a full cycle or loop.
 
