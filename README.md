@@ -1,7 +1,15 @@
 # Rotational Number Theory
+Theory of Rotational Numbers
 
+In the realm of mathematics, natural numbers are usually visualized on a number line, a one-dimensional construct where every number has a unique position. This proposal introduces a different visualization of numbers in a circular or rotational construct, leading to new interpretations and possible mathematical operations.
 
-<img width="639" alt="image" src="https://github.com/jconorgrogan/Infinity-Number-Theory/assets/130090573/6c41e750-0743-4404-85d5-711e9e532d83">
+Basic Constructs
+
+Each natural number, 'n', is represented as 'n' equidistant nodes positioned on a circle. A full rotation (360 degrees or 2π radians) is completed when traversing through all nodes, linking the concepts of counting and rotation. This gives birth to a new system, the Rotational Number System.
+
+Rotational Identity
+
+In this system, each number has a rotational identity, defined as the set of all positions its nodes can take on a circle during a full rotation. Primes have a unique characteristic in this context: their nodes, when rotated, do not align with their original positions until a complete rotation is done. Composite numbers show alignment before a complete rotation.
 
 Euler's identity, 
 <img width="86" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/b363a09e-bf9d-4105-be0f-85360899e3be">
