@@ -72,6 +72,8 @@ Transformations applied to the integer can then represent transformations of the
 Given any complex waveform, the goal is to express it as an integer or a set of integers and operations. It's important to note that while the concept is theoretically appealing for its ability to capture perfect information in a compressed numeric form, practical implementation would need to overcome significant challenges related to data complexity, computational efficiency, and effective decoding.
 
 By extending this concept further, it's theoretically possible to encode more complex data, such as a piece of music, as a set of integers. 
+![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/8e9b6e96-5dad-43d8-bc64-89640e0c4b8b)
+
 
 | Operator | Mathematical Basis | Effect on Nodes | Effect on Wave | Core Mathematical Components |
 |:--------:|:------------------:|:---------------:|:--------------:|:-----------------------------:|
