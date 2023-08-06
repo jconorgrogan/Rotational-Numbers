@@ -87,7 +87,7 @@ Given any complex waveform, the goal is to express it as an integer or a set of 
 By extending this concept further, it's theoretically possible to encode more complex data, such as a piece of music, as a set of integers. 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/8e9b6e96-5dad-43d8-bc64-89640e0c4b8b)
 
-### RNS Theory of π
+### Additional Connection to Euler's formula 
 
 ## Euler's Formula:
 
@@ -95,13 +95,18 @@ Traditionally, Euler's formula is expressed as:
 \[ e^{ix} = \cos(x) + i\sin(x) \]
 Here, exponentiating with a complex number results in a combination of trigonometric functions.
 
-### The Special Case of \( \pi \):
+### Imaginary Unit, \( i \):
 
-Substituting \( x = \pi \) into Euler's formula, we obtain:
-\[ e^{i\pi} = \cos(\pi) + i\sin(\pi) = -1 \]
-In the context of RNS where \( \pi \) inherently represents negation, this equation emphasizes that exponentiating with a complex \( \pi \) (essentially a complex half-turn) results in a negation, translating the geometric rotation into an algebraic operation.
+The imaginary unit \( i \) is defined as:
+\[ i^2 = -1 \]
+In the RNS context, multiplication by \( i \) represents a quarter-turn or 90° rotation, transitioning from the real to the imaginary dimension. This captures the essence of:
+\[ e^{i\frac{\pi}{2}} = i \]
+Exponentiating with a complex quarter-turn (i.e., \( \frac{\pi}{2} \)) results in a transition to the imaginary axis.
 
-## Deeper Implications:
+### Euler's Number, \( e \):
+
+Euler's number \( e \) represents continuous growth or decay. In the RNS, \( e \) can be visualized as a continuous, compounded transformation. When combined with the \( i\pi \) rotation, it leads to cyclical behaviors:
+\[ e^{i\pi} = -1 \]
 
 ### Complex Plane Dynamics:
 
@@ -121,6 +126,7 @@ For any angle \( \theta \):
 \[ \sin(\pi + \theta) = -\sin(\theta) \]
 \[ \cos(\pi + \theta) = -\cos(\theta) \]
 These equations suggest that trigonometric functions post-\( \pi \) are reflections of their pre-\( \pi \) values, emphasizing the duality inherent to \( \pi \) in the RNS.
+
 
 
 
