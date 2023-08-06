@@ -87,6 +87,34 @@ Given any complex waveform, the goal is to express it as an integer or a set of 
 By extending this concept further, it's theoretically possible to encode more complex data, such as a piece of music, as a set of integers. 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/8e9b6e96-5dad-43d8-bc64-89640e0c4b8b)
 
+### pi and -1
+# RNS Theory of π
+
+## Abstract
+In the RNS framework, π isn't simply the circle's circumference-to-diameter ratio. It inherently signifies negation, aligning with -1. This viewpoint reshapes core mathematical constructs.
+
+## Table of Contents
+- [Arithmetic-Geometric Fusion](#arithmetic-geometric-fusion)
+- [Trigonometric Alteration](#trigonometric-alteration)
+- [Euler's Formula Revisited](#eulers-formula-revisited)
+- [Transcendental Shift](#transcendental-shift)
+
+## Arithmetic-Geometric Fusion
+Multiplying by π in the RNS context acts as an inversion operation. While its algebraic behavior mirrors -1, its geometric counterpart is a half-rotation on the unit circle.
+
+## Trigonometric Alteration
+Trigonometric functions undergo a transformation, becoming reflections about their midpoints. For instance, the sine function's behavior post-π mirrors its state pre-π, effectively halving its period.
+
+## Euler's Formula Revisited
+The equation \( e^{i\pi} + 1 = 0 \) affirms that exponentiating using \( i\pi \) (a complex half-turn) enacts a negation. This interpretation blends algebraic and geometric perspectives.
+
+## Transcendental Shift
+Identifying π as -1 blurs the boundary between algebraic and transcendental domains, prompting a reconsideration of classifications or properties within number theory.
+
+## Conclusion
+Through the RNS lens, π emerges not as a mere transcendental constant but as a foundational element symbolizing duality and cyclicity, offering a fresh perspective on mathematical structures and operations.
+
+
 
 | Operator | Mathematical Basis | Effect on Nodes | Effect on Wave | Core Mathematical Components |
 |:--------:|:------------------:|:---------------:|:--------------:|:-----------------------------:|
