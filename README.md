@@ -87,32 +87,40 @@ Given any complex waveform, the goal is to express it as an integer or a set of 
 By extending this concept further, it's theoretically possible to encode more complex data, such as a piece of music, as a set of integers. 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/8e9b6e96-5dad-43d8-bc64-89640e0c4b8b)
 
-### pi and -1
-# RNS Theory of π
+### RNS Theory of π
 
-## Abstract
-In the RNS framework, π isn't simply the circle's circumference-to-diameter ratio. It inherently signifies negation, aligning with -1. This viewpoint reshapes core mathematical constructs.
+## Euler's Formula:
 
-## Table of Contents
-- [Arithmetic-Geometric Fusion](#arithmetic-geometric-fusion)
-- [Trigonometric Alteration](#trigonometric-alteration)
-- [Euler's Formula Revisited](#eulers-formula-revisited)
-- [Transcendental Shift](#transcendental-shift)
+Traditionally, Euler's formula is expressed as:
+\[ e^{ix} = \cos(x) + i\sin(x) \]
+Here, exponentiating with a complex number results in a combination of trigonometric functions.
 
-## Arithmetic-Geometric Fusion
-Multiplying by π in the RNS context acts as an inversion operation. While its algebraic behavior mirrors -1, its geometric counterpart is a half-rotation on the unit circle.
+### The Special Case of \( \pi \):
 
-## Trigonometric Alteration
-Trigonometric functions undergo a transformation, becoming reflections about their midpoints. For instance, the sine function's behavior post-π mirrors its state pre-π, effectively halving its period.
+Substituting \( x = \pi \) into Euler's formula, we obtain:
+\[ e^{i\pi} = \cos(\pi) + i\sin(\pi) = -1 \]
+In the context of RNS where \( \pi \) inherently represents negation, this equation emphasizes that exponentiating with a complex \( \pi \) (essentially a complex half-turn) results in a negation, translating the geometric rotation into an algebraic operation.
 
-## Euler's Formula Revisited
-The equation \( e^{i\pi} + 1 = 0 \) affirms that exponentiating using \( i\pi \) (a complex half-turn) enacts a negation. This interpretation blends algebraic and geometric perspectives.
+## Deeper Implications:
 
-## Transcendental Shift
-Identifying π as -1 blurs the boundary between algebraic and transcendental domains, prompting a reconsideration of classifications or properties within number theory.
+### Complex Plane Dynamics:
 
-## Conclusion
-Through the RNS lens, π emerges not as a mere transcendental constant but as a foundational element symbolizing duality and cyclicity, offering a fresh perspective on mathematical structures and operations.
+In the complex plane, multiplication by a complex number typically involves both rotation and dilation. In the RNS, with \( \pi = -1 \), this multiplication becomes purely a rotation, specifically a half-turn. This offers a more unified perspective on complex multiplication, with \( \pi \) serving as a fundamental pivot.
+
+### Algebraic-Geometric Interplay:
+
+Given \( \pi \) as \( -1 \), multiplication in the RNS is inherently a geometric operation. For any real number \( x \):
+\[ x \times \pi = -x \]
+This equation dictates that multiplication by \( \pi \) algebraically negates \( x \), while geometrically, it rotates \( x \) by \( \pi \) radians on the unit circle, a half-rotation. Thus, the algebraic operation of negation is intertwined with the geometric operation of rotation.
+
+### RNS-Based Trigonometry:
+
+With \( \pi \) signifying \( -1 \), trigonometric identities undergo transformation:
+
+For any angle \( \theta \):
+\[ \sin(\pi + \theta) = -\sin(\theta) \]
+\[ \cos(\pi + \theta) = -\cos(\theta) \]
+These equations suggest that trigonometric functions post-\( \pi \) are reflections of their pre-\( \pi \) values, emphasizing the duality inherent to \( \pi \) in the RNS.
 
 
 
