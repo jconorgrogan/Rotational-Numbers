@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import sounddevice as sd
 
 def number_properties_harmonic(number):
     """Determine amplitude and phase based on a number with harmonic relationships."""
@@ -49,15 +50,30 @@ def number_to_waveform_prime_influence(number, rotation, amplitude, polarization
 
     return waveform
 
+def play_waveform(waveform, fs=44100, repeat=False):
+    """Plays the generated waveform"""
+    
+    # Normalize to 16-bit range
+    waveform /= np.max(np.abs(waveform))
+    
+    # Convert to 16-bit data
+    waveform = (waveform * np.iinfo(np.int16).max).astype(np.int16)
+    
+    while True:
+        sd.play(waveform, fs)
+        sd.wait()
+        if not repeat:
+            break
+
 def plot_waveform_prime_influence(number, t):
     """Generate and plot a waveform corresponding to a number influenced by its prime factors."""
 
+    number = float(number)  # Convert to float
     amplitude, rotation, polarization, prime_factors = number_properties_harmonic(number)
     
-    # Generate the corresponding waveform
     waveform = number_to_waveform_prime_influence(number, rotation, amplitude, polarization, prime_factors, t)
+    play_waveform(waveform, repeat=number.is_integer())
 
-    # Plot the waveform
     plt.figure(figsize=(6, 4))
     plt.plot(t, waveform)
     plt.title('Waveform for Number = {}, Rotation = {:.2f}, Amplitude = {}, Polarization = {}, Prime Factors = {}'.format(number, rotation, amplitude, polarization, prime_factors))
@@ -69,8 +85,9 @@ def plot_waveform_prime_influence(number, t):
 t = np.linspace(0, 1, 500)
 
 # Test with various numbers
-numbers_to_test = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+numbers_to_test = [5,7]
 for number in numbers_to_test:
     plot_waveform_prime_influence(number, t)
+
 plt.tight_layout()
 plt.show()
