@@ -6,15 +6,11 @@ The Rotational Number System (RNS) provides a unique circular representation for
 
 ## 2. Positional Representation in RNS
 
-Every natural number \( n \) is assigned a unique position on the unit circle. The position of the number \( n \) is determined by dividing the circle into \( n \) equidistant nodes. The position is given by the angle:
-
-\[ \theta(n) = \frac{2\pi(n-1)}{N} \]
+In the Rotational Number System (RNS), each natural number `n` is represented by `n` equidistant nodes on a unit circle. The position of a node representing the `k`-th number in the sequence is given by the angle `θ_k = 2π(k-1)/n`.
 
 Where \( N \) is the maximum number to be represented on the circle. The subtracting 1 ensures that the number 1 starts from \( 0 \) degrees or radians.
 
-# Rotational Number System (RNS) and Prime Identification with Rotational Overlap
-
-In the Rotational Number System (RNS), each natural number `n` is represented by `n` equidistant nodes on a unit circle. The position of a node representing the `k`-th number in the sequence is given by the angle `θ_k = 2π(k-1)/n`.
+## 3. Prime + Factorial identification with rotational overlap
 
 A unique property emerges when considering the 'rotational overlap' of these nodes around the circle. Here, 'rotational overlap' refers to the alignment of nodes corresponding to different numbers upon rotation by their respective angles.
 
