@@ -12,6 +12,8 @@ The key is how you map the data onto the numbers in the RNS. For example:
 
 With this approach, a single number or a set of numbers in the RNS can encapsulate a wealth of information. This concept of data compression and encoding is potentially transformative for fields like signal processing, data storage, and telecommunications. Moreover, the unique visualizations provided by the RNS could lead to new insights in fields like number theory, dynamical systems, and machine learning.
 
+<img width="695" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/3a63e736-12a0-4d6c-8e6c-c41dc7991e91">
+
 ## 2. Positional Representation in RNS
 
 In the Rotational Number System (RNS), each natural number `n` is represented by `n` equidistant nodes on a unit circle. The position of a node representing the `k`-th number in the sequence is given by the angle `θ_k = 2π(k-1)/n`.
