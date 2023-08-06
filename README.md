@@ -2,7 +2,15 @@
 
 ## 1. Introduction
 
-The Rotational Number System (RNS) provides a unique circular representation for natural numbers. In RNS, each natural number \( n \) is depicted by a specific node on a circle, with all numbers being equidistant from each other. The objective is to explore mathematical operations within this rotational framework and draw analogies with traditional mathematical systems.
+At its heart, the RNS is a unique representation of numbers on a unit circle. However, its cyclical structure and the way it visualizes mathematical operations allow for the encoding of complex, multi-dimensional data in a single number or a set of numbers.
+
+The key is how you map the data onto the numbers in the RNS. For example:
+
+The magnitude, frequency, and phase of a wave can be mapped to the magnitude, prime factors, and fractional part of a number.
+Cyclic or periodic data can be represented by sequences of numbers in the RNS, with different points in the cycle corresponding to different positions on the unit circle.
+Multi-dimensional data can be represented by sequences or sets of numbers, with each dimension corresponding to a different number or property of a number.
+
+With this approach, a single number or a set of numbers in the RNS can encapsulate a wealth of information. This concept of data compression and encoding is potentially transformative for fields like signal processing, data storage, and telecommunications. Moreover, the unique visualizations provided by the RNS could lead to new insights in fields like number theory, dynamical systems, and machine learning.
 
 ## 2. Positional Representation in RNS
 
