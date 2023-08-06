@@ -57,7 +57,21 @@ where \( r_n = \sqrt{a_n^2 + b_n^2} \) represents the magnitude and \( \phi_n = 
 
 Each term \( r_n e^{i(2\pi n f t + \phi_n)} \) corresponds to a point in the complex plane, represented by its magnitude \( r_n \) and its phase \( \phi_n \). In the RNS, this point would be visualized as a rotation around the origin, with a radius of \( r_n \) and an angle of \( \phi_n \).
 
+### Waveform Compression
 
+Frequency Encoding: A given integer 'n' determines the number of equally spaced points on the unit circle (Roots of Unity). This can be interpreted as 'n' different frequencies present in the wave.
+
+Amplitude Encoding: The count of prime factors of an integer 'n' represents the amplitude of the wave. Higher prime factors lead to a higher amplitude.
+
+Phase Encoding: The fractional part of a number 'n' can determine the phase of the wave, providing an adjustment to the base frequency determined by the integer part of 'n'.
+
+Polarization: The parity of the number (even or odd) could determine the wave's polarization, with even numbers resulting in positive polarization and odd numbers leading to negative polarization.
+
+Transformations applied to the integer can then represent transformations of the wave, thus compressing waveform information into integers and arithmetic operations. For example, adding integers corresponds to combining waves, and multiplication corresponds to rotations and frequency multiplication. Division and subtraction have similar interpretations.
+
+Given any complex waveform, the goal is to express it as an integer or a set of integers and operations. It's important to note that while the concept is theoretically appealing for its ability to capture perfect information in a compressed numeric form, practical implementation would need to overcome significant challenges related to data complexity, computational efficiency, and effective decoding.
+
+By extending this concept further, it's theoretically possible to encode more complex data, such as a piece of music, as a set of integers. 
 
 | Operator | Mathematical Basis | Effect on Nodes | Effect on Wave | Core Mathematical Components |
 |:--------:|:------------------:|:---------------:|:--------------:|:-----------------------------:|
