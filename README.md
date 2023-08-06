@@ -12,10 +12,17 @@ Every natural number \( n \) is assigned a unique position on the unit circle. T
 
 Where \( N \) is the maximum number to be represented on the circle. The subtracting 1 ensures that the number 1 starts from \( 0 \) degrees or radians.
 
+# Rotational Number System (RNS) and Prime Identification with Rotational Overlap
 
-**Observations**:
-- For primes, the roots of unity are trivial (i.e., 1 and -1) until \( n \) is reached.
-- For composites, some roots of unity will align before \( n \) is reached, which corresponds to the factors of \( n \).
+In the Rotational Number System (RNS), each natural number `n` is represented by `n` equidistant nodes on a unit circle. The position of a node representing the `k`-th number in the sequence is given by the angle `θ_k = 2π(k-1)/n`.
+
+A unique property emerges when considering the 'rotational overlap' of these nodes around the circle. Here, 'rotational overlap' refers to the alignment of nodes corresponding to different numbers upon rotation by their respective angles.
+
+Specifically, for a given number `n`, if the nodes corresponding to `n` do not exhibit rotational overlap with nodes of any previous number `m` (where `2 ≤ m < n`) during a full rotation, then `n` is a prime number.
+
+This property provides a novel, geometric method for prime identification and factorization. The absence of rotational overlap with previous numbers is consistent with the definition of primes as numbers having no other divisors than 1 and themselves. Conversely, for composite numbers `n`, rotational overlaps occur with nodes corresponding to their factors.
+
+This approach offers an alternative way to understand prime numbers and factors, using the concept of rotational overlap to provide a unique geometric interpretation. The mathematical basis of this property, as well as efficient computational methods and further implications, are exciting directions for future exploration.
 
 ## 3. Waves and the Rotational Number System
 
