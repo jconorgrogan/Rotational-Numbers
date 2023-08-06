@@ -12,14 +12,6 @@ Every natural number \( n \) is assigned a unique position on the unit circle. T
 
 Where \( N \) is the maximum number to be represented on the circle. The subtracting 1 ensures that the number 1 starts from \( 0 \) degrees or radians.
 
-## 3. Rotational Identity
-
-The rotational identity of a number in the RNS is its representation on the unit circle in the complex plane:
-
-\[ R(n) = e^{\frac{2\pi i (n-1)}{N}} \]
-
-This formula provides a root of unity for every natural number.
-
 
 **Observations**:
 - For primes, the roots of unity are trivial (i.e., 1 and -1) until \( n \) is reached.
