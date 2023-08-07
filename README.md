@@ -1,7 +1,7 @@
 
 ## 1. Introduction
 
-A (potentially novel?) attempt to unify mathmatics. ENT offers a bijective mapping between number theory and geometry; For every mathematical operation or number, there's a unique geometrical representation. The ENT's ability to express operations as rotations in the complex plane directly connects to quantum phase shifts and intuitively helps visualize complex motions such as in quaternions. It also creates a unique visual way to test primality and find prime factors!
+A speculative attempt to unify mathmatics (And also a unique visual way to test primality and find prime factors!). ENT offers a bijective mapping between number theory and geometry; For every mathematical operation or number, there's a unique geometrical representation. The ENT's ability to express operations as rotations in the complex plane directly connects to quantum phase shifts and intuitively helps visualize complex motions such as in quaternions. 
 
 In the Equidistant Number Theory (ENT), each natural number `n` is depicted by `n` equidistant nodes on a unit circle. All of the other elements of mathmatics derive from this concept. 
 
@@ -50,24 +50,25 @@ The following operators (which have a lot of connection with signal processing) 
 
 **The Complex Plane**
 
-In the RNS, multiplication is understood as a rotation in the complex plane. Specifically, multiplying a complex number by a factor of the form ![equation](https://latex.codecogs.com/gif.latex?e^{i\theta})
- corresponds to rotating the number by an angle of θ in the complex plane. For instance, multiplication by ![equation](https://latex.codecogs.com/gif.latex?2i&space;=&space;e^{i(2\pi)})
- represents a quarter-turn or 90° rotation.
+**The Complex Plane with Helical Interpretation**
 
-Here, π signifies a half-rotation or 180° operation. Therefore, multiplying a number by π equates to flipping the number to its opposite point on the unit circle. In this context, π and -1 are intimately connected in this system, establishing a profound link between the geometric operation of rotation and the algebraic operation of negation.
+In the RNS, multiplication in the complex domain is visualized as a combination of rotation in the complex plane and movement along a helix. This helical interpretation offers a three-dimensional depth to the traditional two-dimensional complex plane, enhancing our understanding of operations involving imaginary components.
 
-This association also leads to a significant transformation of trigonometric identities in the RNS. With π signifying a half-rotation, the identities for sine and cosine functions are as follows:
+When a complex number is multiplied by a factor of the form ![equation](https://latex.codecogs.com/gif.latex?e^{i\theta}), it corresponds to a rotation of that number by an angle \(\theta\) in the complex plane. Thus, multiplying by ![equation](https://latex.codecogs.com/gif.latex?2i=e^{i(2\pi)}) represents a quarter-turn or 90° rotation, and due to the imaginary component, it also results in an upward movement along the helix's axis.
 
-![equation1](https://latex.codecogs.com/gif.latex?sin(\pi&space;&plus;&space;\theta)&space;=&space;-sin(\theta))
-![equation2](https://latex.codecogs.com/gif.latex?cos(\pi&space;&plus;&space;\theta)&space;=&space;-cos(\theta))
+The term \(\pi\) represents a 180° operation or half-rotation. Multiplying by \(\pi\) reflects the number to its opposite point on the unit circle, illustrating the deep connection between geometric rotation and algebraic negation in this framework.
+
+This structure modifies trigonometric identities within the RNS. With \(\pi\) signifying a half-rotation:
+![equation1](https://latex.codecogs.com/gif.latex?sin(\pi&plus;\theta)=-sin(\theta))
+![equation2](https://latex.codecogs.com/gif.latex?cos(\pi&plus;\theta)=-cos(\theta))
+
+The periodicity of these functions, having a period of \(2\pi\), is an essential aspect.
+
+Euler's formula ![equation3](https://latex.codecogs.com/gif.latex?e^{i\pi}&plus;1=0) gains a nuanced meaning. It suggests that starting from 1 and undergoing a rotation of \(\pi i\) leads to -1. This equation emphasizes the essence of the RNS, highlighting the significance of rotations and unit circle positions.
+
+In the context of the Fourier Transform, the term ![equation4](https://latex.codecogs.com/gif.latex?e^{-i\pi\omega t}) is interpreted not merely as a complex sinusoid. Instead, it embodies a series of rotations and negations along a helix, providing an alternative perspective on frequency components and signal processing.
 
 
-This is essentially due to the periodic nature of these functions, with a period of 2π.
-
-Euler's formula ![equation](https://latex.codecogs.com/gif.latex?e^{i\pi}&space;&plus;&space;1&space;=&space;0)
- takes on a novel meaning in the RNS. It asserts that a half-turn rotation (exponentiating with πi) from 1 leads to -1. This formula embodies the essence of the RNS, accentuating the vital role of rotations and positions on the unit circle.
-
-In the context of the Fourier Transform, the exponential term e^(-iπωt) is not merely a complex sinusoid but a continuous series of rotations and negations. This viewpoint presents an alternative understanding of frequency components and signal processing.
 
 ## Euler's Formula:
 
