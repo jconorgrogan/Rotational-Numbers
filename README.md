@@ -18,6 +18,10 @@ On rotating each node by its respective angle, no two nodes will overlap with th
 
 This geometric representation leads to an intuitive method for discerning prime numbers and factorizing composites.
 
+3 is a factor of 6. 6 is composite
+![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/01bf5736-5d9e-4aea-beeb-ee8c85e33bbb)
+
+
 
 ## 3. Operations in ENT
 
