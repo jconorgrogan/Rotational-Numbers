@@ -36,177 +36,67 @@ The following operators (which have a lot of connection with signal processing) 
 | Modulo         | Folding back of nodes      | Nodes beyond the modulo number are folded back | theta(n) = 2pi((n-1) mod m) / m | Wave Wrapping (Overflow Handling) |
 
 
-### 4. Connection to Euler's formula 
-The Rotational Number System (RNS) reinterprets mathematical operations and the relationships between numbers from a geometric perspective, with a particular emphasis on the role of 
-�
-π as a half-rotation or negation operation.
+RNS offers a geometric perspective on the relationships between numbers and mathematical operations
 
-In the RNS, multiplication is seen as a rotation in the complex plane. Specifically, multiplying a complex number by a factor of the form 
-�
-�
-�
-e 
-iθ
-  corresponds to a rotation of the number by an angle of 
-�
-θ in the complex plane. For example, multiplication by 
-�
-=
-�
-�
-�
-2
-i=e 
-i 
-2
-π
-​
- 
-  represents a quarter-turn or 
-�
-2
-2
-π
-​
-  (90°) rotation.
+In the RNS, multiplication is understood as a rotation in the complex plane. Specifically, multiplying a complex number by a factor of the form e^(iθ) corresponds to rotating the number by an angle of θ in the complex plane. For instance, multiplication by 2i = e^(i(2π)) represents a quarter-turn or 90° rotation.
 
-The reinterpretation of 
-�
-π as -1 is a key aspect of the RNS. This idea is derived from considering 
-�
-π as a half-rotation or 
-18
-0
-∘
-180 
-∘
-  operation. Thus, multiplying a number by a factor of 
-�
-π is equivalent to flipping the number to its opposite point on the unit circle. In other words, 
-�
-π and -1 are intrinsically linked in this system, leading to a deep connection between the geometric operation of rotation and the algebraic operation of negation.
+Here, π signifies a half-rotation or 180° operation. Therefore, multiplying a number by π equates to flipping the number to its opposite point on the unit circle. In this context, π and -1 are intimately connected in this system, establishing a profound link between the geometric operation of rotation and the algebraic operation of negation.
 
-This connection also results in a significant transformation of trigonometric identities in the RNS. With 
-�
-π signifying -1, the identities for sine and cosine functions become reflections about the y-axis post-
-�
-π:
+This association also leads to a significant transformation of trigonometric identities in the RNS. With π signifying a half-rotation, the identities for sine and cosine functions are as follows:
 
-sin
-⁡
-(
-�
-+
-�
-)
-=
-−
-sin
-⁡
-(
-�
-)
-sin(π+θ)=−sin(θ)
-cos
-⁡
-(
-�
-+
-�
-)
-=
-−
-cos
-⁡
-(
-�
-)
-cos(π+θ)=−cos(θ)
-Furthermore, in the RNS, 
-�
-π is no longer a transcendental number but is redefined as -1, an algebraic entity. This blurs the traditional boundaries between algebraic and transcendental numbers, potentially leading to new classifications and properties of numbers.
+sin(π + θ) = -sin(θ)
+cos(π + θ) = -cos(θ)
 
-Euler's formula 
-�
-�
-�
-+
-1
-=
-0
-e 
-iπ
- +1=0 also takes on a new meaning in the RNS. It states that a half-turn rotation (i.e., exponentiating with 
-�
-�
-πi) from 1 leads to -1. In this way, Euler's formula encapsulates the essence of the RNS, emphasizing the fundamental role of rotations and positions on the unit circle.
+This is essentially due to the periodic nature of these functions, with a period of 2π.
 
-The Fourier Transform in the RNS context offers an alternative perspective on frequency components and signal processing. The exponential term 
-�
-−
-�
-�
-�
-�
-e 
-−iπωt
-  is viewed not just as a complex sinusoid but as a continuous series of rotations and negations.
+Euler's formula e^(iπ) + 1 = 0 takes on a novel meaning in the RNS. It asserts that a half-turn rotation (exponentiating with πi) from 1 leads to -1. This formula embodies the essence of the RNS, accentuating the vital role of rotations and positions on the unit circle.
 
-Finally, the intrinsic link between 
-�
-π and -1 in the RNS suggests a new perspective on the nature of the universe. It implies that cyclicity, return, and opposition are fundamental to the nature of the universe, leading to a worldview where cycles and oppositions are not just patterns but fundamental truths.
+In the context of the Fourier Transform, the exponential term e^(-iπωt) is not merely a complex sinusoid but a continuous series of rotations and negations. This viewpoint presents an alternative understanding of frequency components and signal processing.
 
 ## Euler's Formula:
 
 Traditionally, Euler's formula is expressed as:
-\[ e^{ix} = \cos(x) + i\sin(x) \]
+e^{ix} = cos(x) + isin(x)
 Here, exponentiating with a complex number results in a combination of trigonometric functions.
 
-### Imaginary Unit, \( i \):
+Imaginary Unit, 
+�
+i:
+The imaginary unit i is defined as:
+i^2 = -1
+In the RNS, multiplication by i signifies a quarter-turn or 90° rotation, transitioning from the real to the imaginary dimension. This captures the essence of:
+e^{i(π/2)} = i
+Exponentiating with a complex quarter-turn (i.e., (π/2)) results in a transition to the imaginary axis.
 
-The imaginary unit \( i \) is defined as:
-\[ i^2 = -1 \]
-In the ENT context, multiplication by \( i \) represents a quarter-turn or 90° rotation, transitioning from the real to the imaginary dimension. This captures the essence of:
-\[ e^{i\frac{\pi}{2}} = i \]
-Exponentiating with a complex quarter-turn (i.e., \( \frac{\pi}{2} \)) results in a transition to the imaginary axis.
+Euler's number e embodies continuous growth or decay. In the RNS, e can be visualized as a continuous, compounded transformation. When combined with the iπ rotation, it leads to cyclical behaviors and a standing wave:
 
-### Euler's Number, \( e \):
+e^{iπ} = -1
 
-Euler's number \( e \) represents continuous growth or decay. In the ENT, \( e \) can be visualized as a continuous, compounded transformation. When combined with the \( i\pi \) rotation, it leads to cyclical behaviors and a standing wave:
-\[ e^{i\pi} = -1 \]
+Complex Plane Dynamics:
+In the complex plane, multiplication by a complex number typically involves both rotation and dilation. In the RNS, with π = -1, this multiplication becomes purely a rotation, specifically a half-turn. This offers a more unified perspective on complex multiplication, with π serving as a fundamental pivot.
 
-### Complex Plane Dynamics:
+Algebraic-Geometric Interplay:
+Given π as -1, multiplication in the RNS is inherently a geometric operation. For any real number x:
 
-In the complex plane, multiplication by a complex number typically involves both rotation and dilation. In the ENT, with \( \pi = -1 \), this multiplication becomes purely a rotation, specifically a half-turn. This offers a more unified perspective on complex multiplication, with \( \pi \) serving as a fundamental pivot.
+x × π = -x
+This equation stipulates that multiplication by π algebraically negates x, while geometrically, it rotates x by π radians on the unit circle, a half-rotation. Thus, the algebraic operation of negation is intertwined with the geometric operation of rotation.
 
-### Algebraic-Geometric Interplay:
+RNS-Based Trigonometry:
+With π signifying -1, trigonometric identities undergo transformation:
 
-Given \( \pi \) as \( -1 \), multiplication in the ENT is inherently a geometric operation. For any real number \( x \):
-\[ x \times \pi = -x \]
-This equation dictates that multiplication by \( \pi \) algebraically negates \( x \), while geometrically, it rotates \( x \) by \( \pi \) radians on the unit circle, a half-rotation. Thus, the algebraic operation of negation is intertwined with the geometric operation of rotation.
-
-### ENT-Based Trigonometry:
-
-With \( \pi \) signifying \( -1 \), trigonometric identities undergo transformation:
-
-For any angle \( \theta \):
-\[ \sin(\pi + \theta) = -\sin(\theta) \]
-\[ \cos(\pi + \theta) = -\cos(\theta) \]
-These equations suggest that trigonometric functions post-\( \pi \) are reflections of their pre-\( \pi \) values, emphasizing the duality inherent to \( \pi \) in the ENT.
-
-### Representation in the Complex Plane
+For any angle θ:
+sin(π + θ) = -sin(θ)
+cos(π + θ) = -cos(θ)
+These equations suggest that trigonometric functions post-π are reflections of their pre-π values, emphasizing the duality inherent to π in the RNS.
 
 Every term in the Fourier series can be represented as a complex number using Euler's formula:
 
-\[ e^{i\theta} = \cos(\theta) + i \sin(\theta) \]
-
+e^{iθ} = cos(θ) + isin(θ)
 So, the terms in the Fourier series become:
+f(t) = a_0 + ∑_{n=1}^{∞} r_n e^{i(2πnf t + φ_n)}
+where r_n = sqrt(a_n^2 + b_n^2) represents the magnitude and φ_n = arctan(b_n/a_n) is the phase.
 
-\[ f(t) = a_0 + \sum_{n=1}^{\infty} r_n e^{i(2\pi n f t + \phi_n)} \]
-
-where \( r_n = \sqrt{a_n^2 + b_n^2} \) represents the magnitude and \( \phi_n = \arctan\left(\frac{b_n}{a_n}\right) \) is the phase.
-
-Each term \( r_n e^{i(2\pi n f t + \phi_n)} \) corresponds to a point in the complex plane, represented by its magnitude \( r_n \) and its phase \( \phi_n \). In the ENT, this point would be visualized as a rotation around the origin, with a radius of \( r_n \) and an angle of \( \phi_n \).
+Each term r_n e^{i(2πnf t + φ_n)} corresponds to a point in the complex plane, represented by its magnitude r_n and its phase φ_n. In the RNS, this point would be visualized as a rotation around the origin, with a radius of r_n and an angle of φ_n.
 
 ### Waveform Compression
 
