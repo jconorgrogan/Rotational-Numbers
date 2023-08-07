@@ -23,9 +23,6 @@ On rotating each node by its respective angle, no two nodes will overlap with th
 
 This geometric representation leads to an intuitive method for discerning prime numbers and factorizing composites:
 
-- **Prime Identification:** An absence of rotational overlap indicates a prime number.
-- **Factor Identification for Composites:** For composites, overlaps signal the presence of factors.
-
 
 The following operators are utiized in ENT:
 | Operator       | Mathematical Basis         | Effect on Nodes | Core Mathematical Components  | DSP Connection      |
@@ -43,6 +40,190 @@ The following operators are utiized in ENT:
 
 
 ### 4. Connection to Euler's formula 
+1. Multiplication as Rotation:
+Let's consider the unit circle in the complex plane. Here, multiplication by a complex number is equivalent to a combined rotation and dilation (scaling). If we restrict our multiplier to have a magnitude of 1 (lie on the unit circle), then multiplication is purely a rotation. The angle of this rotation in radians is the argument (angle with the positive x-axis) of the complex number.
+
+For instance, multiplication by the complex number 
+�
+�
+�
+/
+2
+e 
+iπ/2
+  (which is 
+�
+i) corresponds to a 
+�
+/
+2
+π/2 (or 
+9
+0
+∘
+90 
+∘
+ ) rotation.
+
+2. 
+�
+π in the Context of Multiplication:
+When considering 
+�
+π in the RNS, it can be interpreted as a half-rotation, or 
+18
+0
+∘
+180 
+∘
+ . If you multiply a number by a factor corresponding to 
+�
+π, it would undergo this half-rotation. In the RNS, this could be visualized as flipping a number to its opposite point on the circle.
+
+3. Abstracting the Concept:
+If we start to view multiplication not strictly as repetitive addition but as a transformative operation in the RNS, then rotations, flips, and other geometric transformations become natural manifestations of multiplication. This perspective aligns with the idea of 
+�
+π as a rotational multiplier.
+1. Fundamental Unity of 
+�
+π and 
+−
+1
+−1:
+In this universe, the essence of a circle (captured by 
+�
+π) is intrinsically linked to the concept of negation or inversion (represented by 
+−
+1
+−1). The circle becomes not just a geometric shape but a symbol of duality and opposition. Every half-turn or opposition inherently embodies the concept of 
+�
+π.
+
+2. Arithmetic and Geometry:
+Arithmetic operations in this universe are deeply geometric. Multiplication by 
+�
+π isn't just a scaling but also an inversion. This would lead to a blending of algebraic and geometric operations, where numbers and shapes are inextricably intertwined.
+
+3. Reinterpretation of Trigonometry:
+In this universe, trigonometric functions would have a dual nature. The sine and cosine functions, for instance, would be deeply tied to the concept of negation. The period of sine might not be 
+2
+�
+2π but rather a reflection about the y-axis after 
+�
+π.
+
+4. Transcendentals and Algebraics:
+If 
+�
+π represents 
+−
+1
+−1, then one of the most famous transcendental numbers now has an algebraic representation. This redefinition would blur the boundaries between algebraic and transcendental numbers, leading to potentially new classifications and properties of numbers.
+
+5. Complex Plane and Euler's Formula:
+In this RNS universe, Euler's formula 
+�
+�
+�
++
+1
+=
+0
+e 
+iπ
+ +1=0 becomes even more profound. It would essentially state that exponentiating with the essence of duality (the combined 
+�
+�
+iπ) brings about negation. The complex plane, in this case, becomes a dynamic playground of these dualities and rotations.
+
+6. Quantum Implications:
+In quantum mechanics, particles are described by wavefunctions that can undergo phase changes, often represented by complex exponentials. If 
+�
+π is intrinsically 
+−
+1
+−1, then phase changes, particularly those of half a period, become reflections or inversions. This could lead to a different interpretation or visualization of quantum phenomena.
+
+7. Philosophical Implications:
+The duality of 
+�
+π and 
+−
+1
+−1 could have philosophical ramifications. It might imply that cyclicity, return, and opposition are fundamental to the nature of this universe. Every process or phenomenon would inherently embody this duality, leading to a worldview where cycles and oppositions are not just patterns but fundamental truths.
+
+In essence, if 
+�
+π is 
+−
+1
+−1 in the RNS universe, numbers become more than abstract entities; they are deep geometric and philosophical truths. The very fabric of this universe would be woven with cycles, dualities, and oppositions, making it a rich tapestry of interconnected ideas.
+
+====
+
+Representation of 
+�
+i:
+In the complex plane, 
+�
+i represents a quarter-turn or 
+�
+2
+2
+π
+​
+  (90°) rotation. Multiplying by 
+�
+i corresponds to this rotational transformation.
+
+Euler's Formula in RNS:
+Given 
+�
+�
+�
++
+1
+=
+0
+e 
+iπ
+ +1=0, when you raise 
+�
+e to the power of 
+�
+�
+iπ, you're effectively rotating by 
+�
+π radians, which leads you to the point representing 
+−
+1
+−1 on the unit circle. Hence, 
+�
+�
+�
+e 
+iπ
+  is 
+−
+1
+−1. The formula then succinctly states that a half-turn rotation (or multiplication by 
+�
+i twice) from 1 will land you on 
+−
+1
+−1.
+
+Deepening the Connection:
+This formula encapsulates the very essence of the RNS. The RNS is fundamentally about rotations and positions on the unit circle. Euler's formula describes a specific rotation (
+�
+�
+iπ) leading to a specific position (
+−
+1
+−1).
+
+Algebraic vs. Geometric Interpretation:
+Algebraically, Euler's formula seems almost mysterious, connecting seemingly unrelated numbers. However, in the geometric framework of the RNS, it becomes an intuitive statement about rotations on the unit circle.
 
 ## Euler's Formula:
 
