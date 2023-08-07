@@ -1,17 +1,18 @@
 
 ## 1. Introduction
 
-<img width="695" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/3a63e736-12a0-4d6c-8e6c-c41dc7991e91">
+In the Equidistant Number Theory (ENT), each natural number `n` is depicted by `n` equidistant nodes on a unit circle. 
 
-## 2. Positional Representation in ENT
+![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/d94798c6-aa7c-4ece-84b2-6a17fab5192b)
 
-In the Equidistant Number Theory (ENT), each natural number `n` is depicted by `n` equidistant nodes on a unit circle. The position of a node representing the `k`-th number is determined by the angle:
+
+The position of a node representing the `k`-th number is determined by the angle:
 
 \[ \theta_k = \frac{2\pi(k-1)}{n} \]
 
 The subtraction of 1 ensures that the first number in the sequence starts at \(0\) radians or degrees.
 
-## 3. Prime and Factor Identification via Rotational Overlap
+## 2. Prime and Factor Identification via Rotational Overlap
 
 Given a set of `N` nodes, each node `k` has an associated angle:
 
