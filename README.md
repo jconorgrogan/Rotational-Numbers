@@ -13,18 +13,15 @@ The subtraction of 1 ensures that the first number in the sequence starts at \(0
 
 ## 3. Prime and Factor Identification via Rotational Overlap
 
-When visualizing these nodes' rotations around the circle, a distinct property, termed 'rotational overlap', becomes evident. It pertains to the alignment of nodes corresponding to different numbers upon being rotated by their associated angles.
-
 Given a set of `N` nodes, each node `k` has an associated angle:
 
 \[ \theta_k = \frac{2\pi(k-1)}{N} \]
 
 On rotating each node by its respective angle, no two nodes will overlap with the starting positions of any nodes throughout a full rotation unless a divisor relationship exists between them.
 
-This geometric representation leads to an intuitive method for discerning prime numbers and factorizing composites:
+This geometric representation leads to an intuitive method for discerning prime numbers and factorizing composites.
 
-
-The following operators are utiized in ENT:
+The following operators (which have a lot of connection with signal processing) are used in ENT:
 | Operator       | Mathematical Basis         | Effect on Nodes | Core Mathematical Components  | DSP Connection      |
 | -------------- | -------------------------- | --------------- | ----------------------------- | ------------------- |
 | Addition       | Appending new nodes        | Addition of new nodes and recalibration to maintain equidistance | theta(n) = 2pi(n-1) / (n+a) | Superposition Principle |
