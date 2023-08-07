@@ -8,7 +8,6 @@ In the Equidistant Number Theory (ENT), each natural number `n` is depicted by `
 
 The position of a node representing the `k`-th number is determined by the angle:
 
-\[\theta_k = \frac{2\pi(k-1)}{n}\]
 ![equation](https://latex.codecogs.com/gif.latex?\theta_k&space;=&space;\frac{2\pi(k-1)}{n})
 
 The subtraction of 1 ensures that the first number in the sequence starts at \(0\) radians or degrees.
