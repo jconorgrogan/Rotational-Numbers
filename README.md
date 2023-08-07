@@ -48,9 +48,8 @@ The following operators (which have a lot of connection with signal processing) 
 | Logarithm      | Inverse spiral formation   | Nodes are placed in a contracting spiral pattern | theta(n) = log(r^(n-1))e^(2pi i(n-1)/n) | Signal Compression |
 | Modulo         | Folding back of nodes      | Nodes beyond the modulo number are folded back | theta(n) = 2pi((n-1) mod m) / m | Wave Wrapping (Overflow Handling) |
 
-**The Complex Plane**
 
-**The Complex Plane with Helical Interpretation**
+**The Complex Plane**
 
 In the RNS, multiplication in the complex domain is visualized as a combination of rotation in the complex plane and movement along a helix. This helical interpretation offers a three-dimensional depth to the traditional two-dimensional complex plane, enhancing our understanding of operations involving imaginary components.
 
