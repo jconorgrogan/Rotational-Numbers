@@ -30,6 +30,7 @@ This geometric representation leads to an intuitive method for discerning prime 
 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/29b221f0-c7b1-48f9-bdf8-db6c8175d570)
 
+RNS offers a geometric perspective on the relationships between numbers and mathematical operations
 
 The following operators (which have a lot of connection with signal processing) are used in ENT:
 
@@ -46,8 +47,7 @@ The following operators (which have a lot of connection with signal processing) 
 | Logarithm      | Inverse spiral formation   | Nodes are placed in a contracting spiral pattern | theta(n) = log(r^(n-1))e^(2pi i(n-1)/n) | Signal Compression |
 | Modulo         | Folding back of nodes      | Nodes beyond the modulo number are folded back | theta(n) = 2pi((n-1) mod m) / m | Wave Wrapping (Overflow Handling) |
 
-
-RNS offers a geometric perspective on the relationships between numbers and mathematical operations
+**The Complex Plane**
 
 In the RNS, multiplication is understood as a rotation in the complex plane. Specifically, multiplying a complex number by a factor of the form e^(iθ) corresponds to rotating the number by an angle of θ in the complex plane. For instance, multiplication by 2i = e^(i(2π)) represents a quarter-turn or 90° rotation.
 
