@@ -28,18 +28,18 @@ This geometric representation leads to an intuitive method for discerning prime 
 
 
 The following operators are utiized in ENT:
-| Operator | Mathematical Basis | Effect on Nodes | Effect on Wave | Core Mathematical Components |
-|:--------:|:------------------:|:---------------:|:--------------:|:-----------------------------:|
-| Addition | Appending new nodes | Addition of new nodes and recalibration to maintain equidistance | Superposition of new wave | `theta(n) = 2pi(n-1) / (n+a)` |
-| Subtraction | Removal of existing nodes | Removal of nodes and recalibration to maintain equidistance | Cancellation of the corresponding wave | `theta(n) = 2pi(n-1) / (n-a)` |
-| Multiplication | Creating copies of the nodes and redistributing them around the circle | Repetition of nodes based on the multiplication factor; each copy rotated by an angle relative to the previous copy | Frequency modulation | `theta(n, k) = 2pi(n-1) / a + 2pi(k-1) / b` |
-| Division | Inverse of multiplication | Redistribution of nodes based on the division factor; each copy rotated by an angle relative to the previous copy | Frequency demodulation | `theta(n, k) = 2pi(n-1) / a - 2pi(k-1) / b` |
-| Fraction (Decimal) | Partial completion of circle | Placement of nodes less than a full circle | Phase modulation | `theta(n) = 2pi(n-1) / (n+alpha)` (where `alpha < 1`) |
-| Negation | Flipping of the nodes | Nodes flipped across the origin | Wave inversion (180 degree phase shift) | `theta(n) = -2pi(n-1) / n` |
-| Absolute value | Absolute value of nodes | All nodes moved to the positive half | Rectification (all positive wave) | `theta(n) = abs(2pi(n-1) / n)` |
-| Exponentiation | Spiral formation | Nodes are placed in an expanding spiral pattern | Progressive increase in frequency and amplitude | `theta(n) = r^(n-1)e^(2pi i(n-1)/n)` |
-| Logarithm | Inverse spiral formation | Nodes are placed in a contracting spiral pattern | Progressive decrease in frequency and amplitude | `theta(n) = log(r^(n-1))e^(2pi i(n-1)/n)` |
-| Modulo | Folding back of nodes | Nodes beyond the modulo number are folded back | Wave wrapping at a specific frequency | `theta(n) = 2pi((n-1) mod m) / m` |
+| Operator       | Mathematical Basis         | Effect on Nodes | Core Mathematical Components  | DSP Connection      |
+| -------------- | -------------------------- | --------------- | ----------------------------- | ------------------- |
+| Addition       | Appending new nodes        | Addition of new nodes and recalibration to maintain equidistance | theta(n) = 2pi(n-1) / (n+a) | Superposition Principle |
+| Subtraction    | Removal of existing nodes  | Removal of nodes and recalibration to maintain equidistance | theta(n) = 2pi(n-1) / (n-a) | Wave Cancellation (Destructive Interference) |
+| Multiplication | Creating copies of the nodes and redistributing them around the circle | Repetition of nodes based on the multiplication factor; each copy rotated by an angle relative to the previous copy | theta(n, k) = 2pi(n-1) / a + 2pi(k-1) / b | Frequency Modulation |
+| Division       | Inverse of multiplication  | Redistribution of nodes based on the division factor; each copy rotated by an angle relative to the previous copy | theta(n, k) = 2pi(n-1) / a - 2pi(k-1) / b | Frequency Demodulation |
+| Fraction (Decimal) | Partial completion of circle | Placement of nodes less than a full circle | theta(n) = 2pi(n-1) / (n+alpha) (where alpha < 1) | Phase Modulation |
+| Negation       | Flipping of the nodes      | Nodes flipped across the origin | theta(n) = -2pi(n-1) / n | Wave Inversion (180 Degree Phase Shift) |
+| Absolute value | Absolute value of nodes    | All nodes moved to the positive half | theta(n) = abs(2pi(n-1) / n) | Rectification (All Positive Wave) |
+| Exponentiation | Spiral formation           | Nodes are placed in an expanding spiral pattern | theta(n) = r^(n-1)e^(2pi i(n-1)/n) | Amplitude Modulation |
+| Logarithm      | Inverse spiral formation   | Nodes are placed in a contracting spiral pattern | theta(n) = log(r^(n-1))e^(2pi i(n-1)/n) | Signal Compression |
+| Modulo         | Folding back of nodes      | Nodes beyond the modulo number are folded back | theta(n) = 2pi((n-1) mod m) / m | Wave Wrapping (Overflow Handling) |
 
 
 ### 4. Connection to Euler's formula 
