@@ -1,10 +1,11 @@
 
 ## 1. Introduction
 
-In the Equidistant Number Theory (ENT), each natural number `n` is depicted by `n` equidistant nodes on a unit circle. 
+A (potentially novel?) attempt to unify mathmatics. The Equidistant Number Theory (ENT) employs geometric constructs to intuitively represent and operate on numbers, tying arithmetic, geometry, signal processing, quantum mechanics and algebra together .
+
+In the Equidistant Number Theory (ENT), each natural number `n` is depicted by `n` equidistant nodes on a unit circle. All of the other elements of mathmatics derive from this concept. 
 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/d94798c6-aa7c-4ece-84b2-6a17fab5192b)
-
 
 The position of a node representing the `k`-th number is determined by the angle:
 
