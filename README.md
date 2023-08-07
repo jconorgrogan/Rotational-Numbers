@@ -5,28 +5,27 @@
 
 ## 2. Positional Representation in ENT
 
-In the Equidistant Number Theory (ENT), each natural number `n` is represented by `n` equidistant nodes on a unit circle. The position of a node representing the `k`-th number in the sequence is given by the angle `θ_k = 2π(k-1)/n`.
+In the Equidistant Number Theory (ENT), each natural number `n` is depicted by `n` equidistant nodes on a unit circle. The position of a node representing the `k`-th number is determined by the angle:
 
-Where \( N \) is the maximum number to be represented on the circle. The subtracting 1 ensures that the number 1 starts from \( 0 \) degrees or radians.
+\[ \theta_k = \frac{2\pi(k-1)}{n} \]
 
-## 3. Prime + Factorial identification with rotational overlap
+The subtraction of 1 ensures that the first number in the sequence starts at \(0\) radians or degrees.
 
-A unique property emerges when considering the 'rotational overlap' of these nodes around the circle. Here, 'rotational overlap' refers to the alignment of nodes corresponding to different numbers upon rotation by their respective angles.
+## 3. Prime and Factor Identification via Rotational Overlap
 
-Specifically, for a given number `n`, if the nodes corresponding to `n` do not exhibit rotational overlap with nodes of any previous number `m` (where `2 ≤ m < n`) during a full rotation, then `n` is a prime number.
+When visualizing these nodes' rotations around the circle, a distinct property, termed 'rotational overlap', becomes evident. It pertains to the alignment of nodes corresponding to different numbers upon being rotated by their associated angles.
 
-This property provides a novel, geometric method for prime identification and factorization. The absence of rotational overlap with previous numbers is consistent with the definition of primes as numbers having no other divisors than 1 and themselves. Conversely, for composite numbers `n`, rotational overlaps occur with nodes corresponding to their factors.
+Given a set of `N` nodes, each node `k` has an associated angle:
 
-## 2. Euler's Identity in the ENT
+\[ \theta_k = \frac{2\pi(k-1)}{N} \]
 
-Euler's identity is given by:
+On rotating each node by its respective angle, no two nodes will overlap with the starting positions of any nodes throughout a full rotation unless a divisor relationship exists between them.
 
-\[ e^{i\pi} + 1 = 0 \]
+This geometric representation leads to an intuitive method for discerning prime numbers and factorizing composites:
 
-This can be visualized in the ENT as:
-- Begin at the point representing the number 1 on the unit circle.
-- Rotate by \( \pi \) radians to reach the point representing -1.
-- Adding 1 brings us back to the origin.
+- **Prime Identification:** An absence of rotational overlap indicates a prime number.
+- **Factor Identification for Composites:** For composites, overlaps signal the presence of factors.
+
 
 The following operators are utiized in ENT:
 | Operator | Mathematical Basis | Effect on Nodes | Effect on Wave | Core Mathematical Components |
@@ -43,7 +42,7 @@ The following operators are utiized in ENT:
 | Modulo | Folding back of nodes | Nodes beyond the modulo number are folded back | Wave wrapping at a specific frequency | `theta(n) = 2pi((n-1) mod m) / m` |
 
 
-### Additional Connection to Euler's formula 
+### 4. Connection to Euler's formula 
 
 ## Euler's Formula:
 
