@@ -49,25 +49,30 @@ The following operators (which have a lot of connection with signal processing) 
 
 **The Complex Plane**
 
-In the RNS, multiplication is understood as a rotation in the complex plane. Specifically, multiplying a complex number by a factor of the form e^(iθ) corresponds to rotating the number by an angle of θ in the complex plane. For instance, multiplication by 2i = e^(i(2π)) represents a quarter-turn or 90° rotation.
+In the RNS, multiplication is understood as a rotation in the complex plane. Specifically, multiplying a complex number by a factor of the form ![equation](https://latex.codecogs.com/gif.latex?e^{i\theta})
+ corresponds to rotating the number by an angle of θ in the complex plane. For instance, multiplication by ![equation](https://latex.codecogs.com/gif.latex?2i&space;=&space;e^{i(2\pi)})
+ represents a quarter-turn or 90° rotation.
 
 Here, π signifies a half-rotation or 180° operation. Therefore, multiplying a number by π equates to flipping the number to its opposite point on the unit circle. In this context, π and -1 are intimately connected in this system, establishing a profound link between the geometric operation of rotation and the algebraic operation of negation.
 
 This association also leads to a significant transformation of trigonometric identities in the RNS. With π signifying a half-rotation, the identities for sine and cosine functions are as follows:
 
-sin(π + θ) = -sin(θ)
-cos(π + θ) = -cos(θ)
+![equation1](https://latex.codecogs.com/gif.latex?sin(\pi&space;&plus;&space;\theta)&space;=&space;-sin(\theta))
+![equation2](https://latex.codecogs.com/gif.latex?cos(\pi&space;&plus;&space;\theta)&space;=&space;-cos(\theta))
+
 
 This is essentially due to the periodic nature of these functions, with a period of 2π.
 
-Euler's formula e^(iπ) + 1 = 0 takes on a novel meaning in the RNS. It asserts that a half-turn rotation (exponentiating with πi) from 1 leads to -1. This formula embodies the essence of the RNS, accentuating the vital role of rotations and positions on the unit circle.
+Euler's formula ![equation](https://latex.codecogs.com/gif.latex?e^{i\pi}&space;&plus;&space;1&space;=&space;0)
+ takes on a novel meaning in the RNS. It asserts that a half-turn rotation (exponentiating with πi) from 1 leads to -1. This formula embodies the essence of the RNS, accentuating the vital role of rotations and positions on the unit circle.
 
 In the context of the Fourier Transform, the exponential term e^(-iπωt) is not merely a complex sinusoid but a continuous series of rotations and negations. This viewpoint presents an alternative understanding of frequency components and signal processing.
 
 ## Euler's Formula:
 
 Traditionally, Euler's formula is expressed as:
-e^{ix} = cos(x) + isin(x)
+![equation](https://latex.codecogs.com/gif.latex?e^{ix}&space;=&space;cos(x)&space;&plus;&space;isin(x))
+
 Here, exponentiating with a complex number results in a combination of trigonometric functions.
 
 Imaginary Unit, 
