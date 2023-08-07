@@ -18,11 +18,11 @@ On rotating each node by its respective angle, no two nodes will overlap with th
 
 This geometric representation leads to an intuitive method for discerning prime numbers and factorizing composites.
 
-3 is a factor of 6. 6 is composite
+3 is a factor of 6. Notice that you can "fit" 2 "3s" in the number 6
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/8f04aa3c-5ee2-4f4a-b60c-ac3f1c119bc4)
 
 
-2 is not a factor of 5. No n>2 shapes of n<5 can symmetrically fit in 5. 5 is therefore prime
+2 is not a factor of 5. No shapes of n<5 can symmetrically fit in 5. 5 is therefore prime
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/73a1a797-ec5e-425d-a7b3-c13ca8ea1a43)
 
 
