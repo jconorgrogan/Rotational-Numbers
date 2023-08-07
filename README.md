@@ -19,10 +19,13 @@ On rotating each node by its respective angle, no two nodes will overlap with th
 This geometric representation leads to an intuitive method for discerning prime numbers and factorizing composites.
 
 
-
 ## 3. Operations in ENT
 
+![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/29b221f0-c7b1-48f9-bdf8-db6c8175d570)
+
+
 The following operators (which have a lot of connection with signal processing) are used in ENT:
+
 | Operator       | Mathematical Basis         | Effect on Nodes | Core Mathematical Components  | DSP Connection      |
 | -------------- | -------------------------- | --------------- | ----------------------------- | ------------------- |
 | Addition       | Appending new nodes        | Addition of new nodes and recalibration to maintain equidistance | theta(n) = 2pi(n-1) / (n+a) | Superposition Principle |
