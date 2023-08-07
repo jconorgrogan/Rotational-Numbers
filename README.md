@@ -1,7 +1,7 @@
 
 ## 1. Introduction
 
-A (potentially novel?) attempt to unify mathmatics. The Equidistant Number Theory (ENT) employs geometric constructs to intuitively represent and operate on numbers, tying arithmetic, geometry, signal processing, quantum mechanics and algebra together .
+A (potentially novel?) attempt to unify mathmatics. ENT offers a bijective mapping between number theory and geometry; For every mathematical operation or number, there's a unique geometrical representation. The ENT's ability to express operations as rotations in the complex plane directly connects to quantum phase shifts and intuitively helps visualize complex motions such as in quaternions.
 
 In the Equidistant Number Theory (ENT), each natural number `n` is depicted by `n` equidistant nodes on a unit circle. All of the other elements of mathmatics derive from this concept. 
 
