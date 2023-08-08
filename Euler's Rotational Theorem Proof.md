@@ -18,3 +18,5 @@ In the Rotational Number System, the exponential function e^(iθ) is equivalent 
 
 4. **Connect to rotations in the complex plane:**
    A complex number of the form ![equation](https://latex.codecogs.com/gif.latex?e%5E%7Bi%5Ctheta%7D) can be interpreted as a rotation by angle ![equation](https://latex.codecogs.com/gif.latex?%5Ctheta) in the complex plane. This directly corresponds to the Euler's formula in traditional mathematics.
+
+This understanding allows us to connect linear operations (exponentiation) with nonlinear operations (rotation) and can lead to new insights in signal processing, quantum mechanics, and more.
