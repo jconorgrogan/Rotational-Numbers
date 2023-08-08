@@ -13,6 +13,8 @@ The position of a node representing the `k`-th number is determined by the angle
 
 The subtraction of 1 ensures that the first number in the sequence starts at \(0\) radians or degrees.
 
+Here is python code that uses this rotational technique to find prime factors https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/blob/main/PrimeCheckAndFactorization.py
+
 ## 2. Prime and Factor Identification via Rotational Overlap
 
 On rotating each node by its respective angle, no two nodes will overlap with the starting positions of any nodes throughout a full rotation unless a divisor relationship exists between them.
