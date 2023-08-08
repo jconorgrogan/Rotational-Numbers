@@ -109,7 +109,9 @@ Hence, Fourier series terms are:
 Where ![equation](https://latex.codecogs.com/gif.latex?r_n&space;=&space;\sqrt{a_n^2&space;&plus;&space;b_n^2}) is the magnitude and ![equation](https://latex.codecogs.com/gif.latex?\phi_n&space;=&space;arctan(\frac{b_n}{a_n})) is the phase.
 
 **Bridge with non-communicative multiplication**
-Octonions are generally to visualize. In ENT its a bit more straightforward; even some of the interesting behavior like non-communicative multiplication.  The multiplication of octonions is determined by the following product rules:
+Octonions are generally to visualize. In ENT its a bit more straightforward; even some of the interesting behavior like non-communicative multiplication. The rotations and scalings in ENT can give rise to non-commutative multiplication. The scaling factor that depends on the initial rotation angle is key to this.  
+
+The multiplication of octonions is determined by the following product rules:
 
 - e1 * e2 = e3
 - e2 * e3 = e4, and so on, where e_i are the standard basis for octonions.
@@ -142,8 +144,6 @@ For a simple proof, consider two rotations: θ1 corresponding to e1 and θ2 corr
 
 By the above, the product of two rotations in ENT is inherently order-dependent, leading to non-commutative results. In octonions, the product e1 * e2 ≠ e2 * e1, reflecting the non-commutativity we derived from ENT-based rotations.
 
-### Conclusion:
-The rotations and scalings in ENT, when applied to the context of octonions, can indeed give rise to non-commutative multiplication. The scaling factor that depends on the initial rotation angle is key to this.
 
 ### Waveform Compression
 
