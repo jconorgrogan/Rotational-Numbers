@@ -28,7 +28,7 @@ This geometric representation leads to an intuitive method for discerning prime 
 
 Here is python code that uses this rotational technique to find prime factors https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/blob/main/PrimeCheckAndFactorization.py
 
-This is a plot of all prime numbers using ENT. The red lines I added to see the symmetry/asymmetry at different points
+This is a plot of all prime numbers using ENT. The red lines I added to see the symmetry/asymmetry at different points; note the incredibly interesting patterns at different points. The vertical lines do not have any overlap with nodes. Nodes seem to make a wave pattern on the diagnoal one. And the horionzontal lines are interesting as well!
 <img width="695" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/fe27d0ac-ba97-4243-bcad-f0667483afd8">
 
 
