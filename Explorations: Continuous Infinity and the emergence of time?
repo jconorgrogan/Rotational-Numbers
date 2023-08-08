@@ -35,3 +35,28 @@ The intuitive understanding that works well in two dimensions might start to bre
 
 Continuous infinity implies that there are infinite ways to transform and rotate objects within the mathematical space.
 These continuous transformations might not adhere to traditional mathematical rules, causing a breakdown in conventional understanding and logic
+
+The loss of certain algebraic properties like associativity and alternativity as we move to higher dimensions (e.g., octonions) may reflect a fundamental limitation in the mathematical representation of physical reality. This breakdown might suggest that dimensions above 4 are less physically relevant or coherent, or at least "time" is experienced differently.
+
+Real Numbers are 1-dimensional, commutative, associative, and have a division algebra.
+Complex Numbers are 2-dimensional, commutative, associative, and have a division algebra.
+Quaternions are 4-dimensional, non-commutative, associative, and have a division algebra.
+Octonions are 8-dimensional, non-commutative, non-associative but alternative, and have a division algebra.
+Sedenions are 16-dimensional, non-commutative, non-associative, and non-alternative, losing the division algebra property.
+
+Order begins to matter in the realm of quaternions, which are 4-dimensional. In quaternions, multiplication is non-commutative, meaning that the order of multiplication does matter. Specifically, for two quaternions 
+�
+q and 
+�
+p, it's generally true that 
+�
+�
+≠
+�
+�
+qp
+
+=pq. This is in contrast to real numbers (1-dimensional) and complex numbers (2-dimensional), where multiplication is commutative, and the order of multiplication doesn't matter.
+
+The non-commutative nature of quaternions has profound implications. For example, in 3D rotations (which can be represented by quaternions), the order of rotations around different axes matters. If you rotate first around one axis and then around another, you'll get a different result than if you reverse the order of rotations.
+The transition from quaternions to octonions, with the loss of commutativity and then associativity, might parallel how quantum mechanics introduces a more complex and less intuitive structure to the understanding of physical reality. Just as classical mechanics breaks down at the quantum level, so do our intuitive mathematical structures when we move to higher dimensions.
