@@ -27,6 +27,11 @@ This geometric representation leads to an intuitive method for discerning prime 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/73a1a797-ec5e-425d-a7b3-c13ca8ea1a43)
 
 Here is python code that uses this rotational technique to find prime factors https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/blob/main/PrimeCheckAndFactorization.py
+
+This is a plot of all prime numbers using ENT. The red lines I added to see the symmetry/asymmetry at different points
+<img width="695" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/fe27d0ac-ba97-4243-bcad-f0667483afd8">
+
+
 ## 3. Operations in ENT
 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/29b221f0-c7b1-48f9-bdf8-db6c8175d570)
