@@ -57,15 +57,15 @@ In the RNS, multiplication in the complex domain is visualized as a combination 
 
 When a complex number is multiplied by a factor of the form ![equation](https://latex.codecogs.com/gif.latex?e^{i\theta}), it corresponds to a rotation of that number by an angle \(\theta\) in the complex plane. Thus, multiplying by ![equation](https://latex.codecogs.com/gif.latex?2i=e^{i(2\pi)}) represents a quarter-turn or 90° rotation, and due to the imaginary component, it also results in an upward movement along the helix's axis.
 
-The term \(\pi\) represents a 180° operation or half-rotation. Multiplying by \(\pi\) reflects the number to its opposite point on the unit circle, illustrating the deep connection between geometric rotation and algebraic negation in this framework.
+The term ![equation](https://latex.codecogs.com/gif.latex?\pi) represents a 180° operation or half-rotation. Multiplying by ![equation](https://latex.codecogs.com/gif.latex?\pi) reflects the number to its opposite point on the unit circle, illustrating the deep connection between geometric rotation and algebraic negation in this framework.
 
 This structure modifies trigonometric identities within the RNS. With \(\pi\) signifying a half-rotation:
 ![equation1](https://latex.codecogs.com/gif.latex?sin(\pi&plus;\theta)=-sin(\theta))
 ![equation2](https://latex.codecogs.com/gif.latex?cos(\pi&plus;\theta)=-cos(\theta))
 
-The periodicity of these functions, having a period of \(2\pi\), is an essential aspect.
+The periodicity of these functions, having a period of 2![equation](https://latex.codecogs.com/gif.latex?\pi), is an essential aspect.
 
-Euler's formula ![equation3](https://latex.codecogs.com/gif.latex?e^{i\pi}&plus;1=0) gains a nuanced meaning. It suggests that starting from 1 and undergoing a rotation of \(\pi i\) leads to -1. This equation emphasizes the essence of the RNS, highlighting the significance of rotations and unit circle positions.
+Euler's formula ![equation3](https://latex.codecogs.com/gif.latex?e^{i\pi}&plus;1=0) gains a nuanced meaning. It suggests that starting from 1 and undergoing a rotation of ![equation](https://latex.codecogs.com/gif.latex?\pi) leads to -1. This equation emphasizes the essence of the RNS, highlighting the significance of rotations and unit circle positions.
 
 In the context of the Fourier Transform, the term ![equation4](https://latex.codecogs.com/gif.latex?e^{-i\pi\omega t}) is interpreted not merely as a complex sinusoid. Instead, it embodies a series of rotations and negations along a helix, providing an alternative perspective on frequency components and signal processing.
 
