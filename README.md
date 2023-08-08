@@ -111,42 +111,6 @@ Hence, Fourier series terms are:
 
 Where ![equation](https://latex.codecogs.com/gif.latex?r_n&space;=&space;\sqrt{a_n^2&space;&plus;&space;b_n^2}) is the magnitude and ![equation](https://latex.codecogs.com/gif.latex?\phi_n&space;=&space;arctan(\frac{b_n}{a_n})) is the phase.
 
-**Bridge with non-communicative multiplication**
-Octonions are generally to visualize. In ENT its a bit more straightforward; even some of the interesting behavior like non-communicative multiplication. The rotations and scalings in ENT can give rise to non-commutative multiplication. The scaling factor that depends on the initial rotation angle is key to this.  
-
-The multiplication of octonions is determined by the following product rules:
-
-- e1 * e2 = e3
-- e2 * e3 = e4, and so on, where e_i are the standard basis for octonions.
-- For any i ≠ j, ei * ej = -δ_ij - Σ(k ≠ i,j) C_ijk * ek, where C_ijk are the structure constants of the octonions and δ_ij is the Kronecker delta.
-
-Now, let's relate this to ENT:
-
-### Rotations in ENT:
-Suppose θ1 and θ2 are rotation angles corresponding to two numbers in ENT. Their combination results in a rotation defined by:
-
-θ_12 = f(θ1, θ2)
-
-The exact form of f is influenced by the nature of rotation and scaling in ENT. For our purpose, let's assert a rotation in ENT as:
-
-θ_12 = θ1 + s(θ1) * θ2
-
-Where s(θ1) is a scaling factor due to the first rotation.
-
-### Linking to Octonions:
-Consider octonions as O1 = a1 + b1 * e1 + c1 * e2 + ... and O2 = a2 + b2 * e1 + c2 * e2 + .... Their product, considering just one basis e1, becomes:
-
-O1 * O2 = (a1 * a2 - b1 * b2) + (a1 * b2 + b1 * a2) * e1
-
-This multiplication is a combination of rotation (from the multiplication of the basis terms) and scaling (from the product of the scalar parts). Let's postulate that the non-commutativity arises because the scaling s(θ1) depends on θ1. So, when we swap the order of multiplication, θ1 and θ2 reverse roles, leading to a different scaling, and hence a different result:
-
-θ_21 = θ2 + s(θ2) * θ1 ≠ θ_12
-
-### Proof of Non-Commutativity:
-For a simple proof, consider two rotations: θ1 corresponding to e1 and θ2 corresponding to e2. Using ENT, let their combined rotation be θ_12 = θ1 + s(θ1) * θ2. For the reverse, θ_21 = θ2 + s(θ2) * θ1. Given s(θ1) ≠ s(θ2) in general, it's clear that θ_12 ≠ θ_21.
-
-By the above, the product of two rotations in ENT is inherently order-dependent, leading to non-commutative results. In octonions, the product e1 * e2 ≠ e2 * e1, reflecting the non-commutativity we derived from ENT-based rotations.
-
 
 ### Waveform Compression
 
