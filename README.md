@@ -13,8 +13,6 @@ The position of a node representing the `k`-th number is determined by the angle
 
 The subtraction of 1 ensures that the first number in the sequence starts at \(0\) radians or degrees.
 
-Here is python code that uses this rotational technique to find prime factors https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/blob/main/PrimeCheckAndFactorization.py
-
 ## 2. Prime and Factor Identification via Rotational Overlap
 
 On rotating each node by its respective angle, no two nodes will overlap with the starting positions of any nodes throughout a full rotation unless a divisor relationship exists between them.
@@ -28,7 +26,7 @@ This geometric representation leads to an intuitive method for discerning prime 
 2 is not a factor of 5. No shapes of 1<n<5 nodes can symmetrically fit in 5 after a full rotation. 5 is therefore prime
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/73a1a797-ec5e-425d-a7b3-c13ca8ea1a43)
 
-
+Here is python code that uses this rotational technique to find prime factors https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/blob/main/PrimeCheckAndFactorization.py
 ## 3. Operations in ENT
 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/29b221f0-c7b1-48f9-bdf8-db6c8175d570)
