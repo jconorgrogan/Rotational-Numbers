@@ -67,62 +67,53 @@ Euler's formula ![equation3](https://latex.codecogs.com/gif.latex?e^{i\pi}&plus;
 
 In the context of the Fourier Transform, the term ![equation4](https://latex.codecogs.com/gif.latex?e^{-i\pi\omega t}) is interpreted not merely as a complex sinusoid. Instead, it embodies a series of rotations and negations along a helix, providing an alternative perspective on frequency components and signal processing.
 
+## Euler's Formula and Helical Interpretation:
 
-
-## Euler's Formula:
-
-Traditionally, Euler's formula is expressed as:
+Traditionally, Euler's formula is given as:
 ![equation](https://latex.codecogs.com/gif.latex?e^{ix}&space;=&space;cos(x)&space;&plus;&space;isin(x))
 
-Here, exponentiating with a complex number results in a combination of trigonometric functions.
+Exponentiating with a complex number introduces trigonometric functions. 
 
-Imaginary Unit, 
-�
-i:
-The imaginary unit i is defined as:
-i^2 = -1
-In the RNS, multiplication by i signifies a quarter-turn or 90° rotation, transitioning from the real to the imaginary dimension. This captures the essence of:
-e^{i(π/2)} = i
-Exponentiating with a complex quarter-turn (i.e., (π/2)) results in a transition to the imaginary axis.
+### Imaginary Unit, ![equation](https://latex.codecogs.com/gif.latex?i):
+Defined by:
+![equation](https://latex.codecogs.com/gif.latex?i^2&space;=&space;-1)
 
-Euler's number e embodies continuous growth or decay. In the RNS, e can be visualized as a continuous, compounded transformation. When combined with the iπ rotation, it leads to cyclical behaviors and a standing wave:
+In the RNS, multiplication by ![equation](https://latex.codecogs.com/gif.latex?i) signifies a quarter-turn or 90° rotation in the complex plane and a move upward along the helical axis. This idea is rooted in:
+![equation](https://latex.codecogs.com/gif.latex?e^{i(\pi/2)}&space;=&space;i)
 
-e^{iπ} = -1
+Euler's number ![equation](https://latex.codecogs.com/gif.latex?e) embodies continuous transformation. Coupled with the ![equation](https://latex.codecogs.com/gif.latex?i\pi) rotation, it results in cyclical behaviors:
+![equation](https://latex.codecogs.com/gif.latex?e^{i\pi}&space;=&space;-1)
 
-Complex Plane Dynamics:
-In the complex plane, multiplication by a complex number typically involves both rotation and dilation. In the RNS, with π = -1, this multiplication becomes purely a rotation, specifically a half-turn. This offers a more unified perspective on complex multiplication, with π serving as a fundamental pivot.
+### Complex Plane Dynamics:
+Multiplication by a complex number usually entails rotation and dilation. In the RNS, with ![equation](https://latex.codecogs.com/gif.latex?\pi&space;=&space;-1), multiplication primarily represents rotation, with ![equation](https://latex.codecogs.com/gif.latex?\pi) as a pivotal element.
 
-Algebraic-Geometric Interplay:
-Given π as -1, multiplication in the RNS is inherently a geometric operation. For any real number x:
+### Algebraic-Geometric Interplay:
+In the RNS, multiplication is a geometric action. For any real ![equation](https://latex.codecogs.com/gif.latex?x):
+![equation](https://latex.codecogs.com/gif.latex?x&space;\times&space;\pi&space;=&space;-x)
 
-x × π = -x
-This equation stipulates that multiplication by π algebraically negates x, while geometrically, it rotates x by π radians on the unit circle, a half-rotation. Thus, the algebraic operation of negation is intertwined with the geometric operation of rotation.
+This means that multiplying by ![equation](https://latex.codecogs.com/gif.latex?\pi) negates ![equation](https://latex.codecogs.com/gif.latex?x) algebraically and rotates it by ![equation](https://latex.codecogs.com/gif.latex?\pi) radians on the unit circle.
 
-RNS-Based Trigonometry:
-With π signifying -1, trigonometric identities undergo transformation:
+### RNS-Based Trigonometry:
+In the RNS, trigonometric identities transform with ![equation](https://latex.codecogs.com/gif.latex?\pi) representing -1:
+![equation](https://latex.codecogs.com/gif.latex?sin(\pi&space;&plus;&space;\theta)&space;=&space;-sin(\theta))
+![equation](https://latex.codecogs.com/gif.latex?cos(\pi&space;&plus;&space;\theta)&space;=&space;-cos(\theta))
 
-For any angle θ:
-sin(π + θ) = -sin(θ)
-cos(π + θ) = -cos(θ)
-These equations suggest that trigonometric functions post-π are reflections of their pre-π values, emphasizing the duality inherent to π in the RNS.
+In the Fourier series, each term is expressed as a complex number via Euler's formula:
+![equation](https://latex.codecogs.com/gif.latex?e^{i\theta}&space;=&space;cos(\theta)&space;&plus;&space;isin(\theta))
 
-Every term in the Fourier series can be represented as a complex number using Euler's formula:
+Hence, Fourier series terms are:
+![equation](https://latex.codecogs.com/gif.latex?f(t)&space;=&space;a_0&space;&plus;&space;\sum_{n=1}^{\infty}&space;r_n&space;e^{i(2\pi&space;nf&space;t&space;&plus;&space;\phi_n)})
 
-e^{iθ} = cos(θ) + isin(θ)
-So, the terms in the Fourier series become:
-f(t) = a_0 + ∑_{n=1}^{∞} r_n e^{i(2πnf t + φ_n)}
-where r_n = sqrt(a_n^2 + b_n^2) represents the magnitude and φ_n = arctan(b_n/a_n) is the phase.
-
-Each term r_n e^{i(2πnf t + φ_n)} corresponds to a point in the complex plane, represented by its magnitude r_n and its phase φ_n. In the RNS, this point would be visualized as a rotation around the origin, with a radius of r_n and an angle of φ_n.
+Where ![equation](https://latex.codecogs.com/gif.latex?r_n&space;=&space;\sqrt{a_n^2&space;&plus;&space;b_n^2}) is the magnitude and ![equation](https://latex.codecogs.com/gif.latex?\phi_n&space;=&space;arctan(\frac{b_n}{a_n})) is the phase.
 
 ### Waveform Compression
 
-The ENT can be linked to wave properties using the Fourier series. Given a wave function \( f(t) \), its Fourier series is:
+The ENT's helical interpretation bridges wave properties via the Fourier series. Given a wave function ![equation](https://latex.codecogs.com/gif.latex?f(t)), its Fourier series is:
+![equation](https://latex.codecogs.com/gif.latex?f(t)&space;=&space;a_0&space;&plus;&space;\sum_{n=1}^{\infty}&space;\left[&space;a_n&space;cos(2\pi&space;n&space;f&space;t)&space;&plus;&space;b_n&space;sin(2\pi&space;n&space;f&space;t)&space;\right])
 
-\[ f(t) = a_0 + \sum_{n=1}^{\infty} \left[ a_n \cos(2\pi n f t) + b_n \sin(2\pi n f t) \right] \]
+In the ENT, series terms correspond to numbers in rotational representation, enabling intuitive understanding of wave transformations.
 
-In the ENT, each term in this series can correspond to a number's rotational representation. This perspective allows for wave operations to be intuitively understood as transformations in the ENT.
-
-By extending this concept further, it's theoretically possible to encode more complex data, such as a piece of music, as a set of integers. 
+This concept's extension might allow encoding intricate data, like music, as integer sets. 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/8e9b6e96-5dad-43d8-bc64-89640e0c4b8b)
+
 
