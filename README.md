@@ -155,7 +155,6 @@ The ENT's helical interpretation bridges wave properties via the Fourier series.
 
 In the ENT, series terms correspond to numbers in rotational representation, enabling intuitive understanding of wave transformations.
 
-This concept's extension might allow encoding intricate data, like music, as integer sets. 
-![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/8e9b6e96-5dad-43d8-bc64-89640e0c4b8b)
+This concept's extension might allow encoding of intricate data, like music, as integer sets. 
 
 
