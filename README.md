@@ -26,9 +26,9 @@ This geometric representation leads to an intuitive method for discerning prime 
 2 is not a factor of 5. No shapes of 1<n<5 nodes can symmetrically fit in 5 after a full rotation. 5 is therefore prime
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/73a1a797-ec5e-425d-a7b3-c13ca8ea1a43)
 
-Here is python code that uses this rotational technique to find prime factors https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/blob/main/PrimeCheckAndFactorization.py
+Here is python code that uses this rotational technique to find prime factors https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/blob/main/PrimeCheckAndFactorization.py It works! (though its far less computationally efficient than other methods)
 
-This is a plot of all prime numbers using ENT. The red lines I added to see the symmetry/asymmetry at different points; note the incredibly interesting patterns at different points. The vertical lines do not have any overlap with nodes. Nodes seem to make a wave pattern on the diagnoal one. And the horionzontal lines are interesting as well!
+Primes take some interesting meaning with ENT. Here is a plot of all prime numbers up to 50, linearly scaling for each prime addition. The red lines I added to see the symmetry/asymmetry at different points; note the incredibly interesting patterns at different points. The vertical lines do not have any overlap with nodes. Nodes seem to make a wave pattern on the diagnoal one. And the horionzontal lines are interesting as well!
 <img width="695" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/fe27d0ac-ba97-4243-bcad-f0667483afd8">
 
 
