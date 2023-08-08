@@ -19,7 +19,7 @@ On rotating each node by its respective angle, no two nodes will overlap with th
 
 This geometric representation leads to an intuitive method for discerning prime numbers and factorizing composites.
 
-3 (red dots, spaced equidistantly) is a factor of 6 (green dots). Notice that you can "fit" 2 equidisdant "3s" (after one rotation) in the number 6
+3 (red dots, spaced equidistantly) is a factor of 6. Notice that you can "fit" 2 equidisdant "3s" (after one rotation) in the number 6
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/8f04aa3c-5ee2-4f4a-b60c-ac3f1c119bc4)
 
 
