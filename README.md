@@ -1,9 +1,9 @@
 
 ## 1. Introduction
 
-A speculative attempt to unify mathmatics (And also a unique visual way to test primality and find prime factors!). ENT offers a bijective mapping between number theory and geometry; For every mathematical operation or number, there's a unique geometrical representation. The ENT's ability to express operations as rotations in the complex plane directly connects to quantum phase shifts and intuitively helps visualize complex motions such as in quaternions. 
+Equidistant Number Theory (ENT) is a speculative attempt to unify mathmatics (And unique way to test primality and find prime factors!)  ENT offers a bijective mapping between number theory and geometry; For every mathematical operation or number, there's a unique geometrical representation. The ENT's ability to express operations as rotations in the complex plane directly connects to quantum phase shifts and intuitively helps visualize complex motions such as in quaternions. 
 
-In the Equidistant Number Theory (ENT), each natural number `n` is depicted by `n` equidistant nodes on a unit circle. All of the other elements of mathmatics derive from this concept. 
+In the Equidistant Number Theory, each natural number `n` is depicted by `n` equidistant nodes on a unit circle. All of the other elements of mathmatics derive from this concept. 
 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/d94798c6-aa7c-4ece-84b2-6a17fab5192b)
 
