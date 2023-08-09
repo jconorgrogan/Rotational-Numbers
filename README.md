@@ -31,12 +31,17 @@ Here is python code that uses this rotational technique to find prime factors ht
 With this new way of representing numbers comes a new way of visualizing their patterns.
 
 
+
 Here is a plot of all composites, linearly scaling for each subsequent composite number
 <img width="688" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/a35158a7-e5df-4aa7-839e-17badd89bda3">
 
 
 And here is a plot of all prime numbers up to 50, linearly scaling for each prime addition. Each color is a different type of prime
 <img width="688" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/9a31711f-52bb-474e-b352-cce2ac3c2cee">
+
+Here are all numbers 2-50
+<img width="933" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/65ad7a69-694c-4778-89c9-b2ad694b5463">
+
 
 
 
