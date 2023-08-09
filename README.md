@@ -30,6 +30,9 @@ Here is python code that uses this rotational technique to find prime factors ht
 
 With this new way of representing numbers comes a new way of visualizing their patterns.
 
+<img width="721" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/e454eb0d-9ca1-4078-8219-9fdf25a0c34b">
+
+
 
 
 Here is a plot of all composites, linearly scaling for each subsequent composite number
