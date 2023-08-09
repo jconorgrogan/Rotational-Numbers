@@ -39,8 +39,9 @@ Here is a plot of all composites, linearly scaling for each subsequent composite
 And here is a plot of all prime numbers up to 50, linearly scaling for each prime addition. Each color is a different type of prime
 <img width="688" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/9a31711f-52bb-474e-b352-cce2ac3c2cee">
 
-Here are all numbers 2-50
-<img width="933" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/65ad7a69-694c-4778-89c9-b2ad694b5463">
+Here are all numbers 
+<img width="699" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/e7cff880-db62-4bb0-8253-12285b23371e">
+
 
 
 
