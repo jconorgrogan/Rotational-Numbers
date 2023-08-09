@@ -28,9 +28,18 @@ Here is a visual representation: 3 (red dots, spaced equidistantly) is a factor 
 
 Here is python code that uses this rotational technique to find prime factors https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/blob/main/PrimeCheckAndFactorization.py It works! (though its far less computationally efficient than other methods)
 
-With this new way of representing numbers comes a new way of visualizing primes. 
+With this new way of representing numbers comes a new way of visualizing their patterns.
 
-Below is a plot of all prime numbers up to 50, linearly scaling for each prime addition. The red lines are added by me so you can see the patterns that primes make
+
+Here is a plot of all composites, linearly scaling for each subsequent composite number
+<img width="688" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/a35158a7-e5df-4aa7-839e-17badd89bda3">
+
+
+And here is a plot of all prime numbers up to 50, linearly scaling for each prime addition. Each color is a different type of prime
+<img width="688" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/9a31711f-52bb-474e-b352-cce2ac3c2cee">
+
+
+
 <img width="695" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/fe27d0ac-ba97-4243-bcad-f0667483afd8">
 
 
