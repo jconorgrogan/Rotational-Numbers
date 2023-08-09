@@ -1,7 +1,7 @@
 
 ## 1. Introduction
 
-Equidistant Number Theory (ENT) or Rotational Number Theory (RNT) is a speculative attempt to find a new way to visualize mathmatics (And a real way to test primality and find prime factors!)  ENT offers a bijective mapping between number theory and geometryL For every mathematical operation or number, there's a unique geometrical representation. The ENT's ability to express operations as rotations in the complex plane directly connects to quantum phase shifts and intuitively helps visualize complex motions (eg non-communicative multiplication) with octonions. 
+Equidistant Number Theory (ENT) or Rotational Number Theory (RNT) is a speculative attempt to find a new way to visualize mathmatics (And a real way to find prime factors!)  ENT offers a bijective mapping between number theory and geometryL For every mathematical operation or number, there's a unique geometrical representation. The ENT's ability to express operations as rotations in the complex plane directly connects to quantum phase shifts and intuitively helps visualize complex motions (eg non-communicative multiplication) with octonions. 
 
 In the Equidistant Number Theory, each natural number `n` is depicted by `n` equidistant nodes on a unit circle. All of the other elements of mathmatics derive from this concept. 
 
@@ -11,24 +11,26 @@ The position of a node representing the `k`-th number is determined by the angle
 
 ![equation](https://latex.codecogs.com/gif.latex?\theta_k&space;=&space;\frac{2\pi(k-1)}{n})
 
-The subtraction of 1 ensures that the first number in the sequence starts at \(0\) radians or degrees.
+The subtraction of 1 ensures that the first number in the sequence starts at \(0\) radians or degrees. TLDR this means that we start every circle with a node in the far right side.
 
 ## 2. Prime and Factor Identification via Rotational Overlap
 
-On rotating each node by its respective angle, no two nodes will overlap with the starting positions of any nodes throughout a full rotation unless a divisor relationship exists between them.
-
 This geometric representation leads to an intuitive method for discerning prime numbers and factorizing composites.
 
-3 (red dots, spaced equidistantly) is a factor of 6. Notice that you can "fit" 2 equidisdant "3s" (after one rotation) in the number 6
+If you rotate each set of nodes by their respective angles, no two nodes will overlap with the starting positions of any nodes throughout a full rotation unless a divisor relationship exists between them.
+
+
+Here is a visual representation: 3 (red dots, spaced equidistantly) is a factor of 6. Notice that you can "fit" 2 equidisdant "3s" (after one rotation) in the number 6
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/8f04aa3c-5ee2-4f4a-b60c-ac3f1c119bc4)
 
-
-2 is not a factor of 5. No shapes of 1<n<5 nodes can symmetrically fit in 5 after a full rotation. 5 is therefore prime
+2 does not "fit" within the 5 when you rotate is. Same with 3 and 4.  5 is therefore prime
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/73a1a797-ec5e-425d-a7b3-c13ca8ea1a43)
 
 Here is python code that uses this rotational technique to find prime factors https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/blob/main/PrimeCheckAndFactorization.py It works! (though its far less computationally efficient than other methods)
 
-With this new way of representing numbers comes a new way of visualizing primes.  Here is a plot of all prime numbers up to 50, linearly scaling for each prime addition. The red lines I added to see the symmetry/asymmetry at different points; note the incredibly interesting patterns at different points. The vertical lines do not have any overlap with nodes. Nodes seem to make a wave pattern on the diagnoal one. And the horionzontal lines are interesting as well!
+With this new way of representing numbers comes a new way of visualizing primes. 
+
+Below is a plot of all prime numbers up to 50, linearly scaling for each prime addition. The red lines are added by me so you can see the patterns that primes make
 <img width="695" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/fe27d0ac-ba97-4243-bcad-f0667483afd8">
 
 
@@ -36,7 +38,7 @@ With this new way of representing numbers comes a new way of visualizing primes.
 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/29b221f0-c7b1-48f9-bdf8-db6c8175d570)
 
-RNS offers a geometric perspective on the relationships between numbers and mathematical operations
+ENT offers a geometric perspective on the relationships between numbers and mathematical operations
 
 The following operators (which have a lot of connection with signal processing) are used in ENT:
 
