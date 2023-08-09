@@ -47,6 +47,10 @@ Here is a zoomed-in plot of all composites, linearly scaling for each subsequent
 And here is a plot of all prime numbers up to 50, linearly scaling for each prime addition. Each color is a different type of prime
 <img width="688" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/9a31711f-52bb-474e-b352-cce2ac3c2cee">
 
+A few observations:
+1. Prime numbers seem to "fill in" the circle almost immediately as we linearly scale outwards.
+2. When we add in all of the numbers it looks sort of like a number of railroad tracks on the righthand axis.
+3. There is some interesting set of effects at the 45 degree markers with prime numbers 
 
 
 
