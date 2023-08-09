@@ -33,6 +33,9 @@ With this new way of representing numbers comes a new way of visualizing their p
 Here are the first 500 numbers (2-500)
 <img width="848" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/8b873bd5-5907-49ec-972b-9bdb1355d6e4">
 
+Here are the first 500 primes. They are densely packed- looks like lens flare!
+<img width="857" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/666f1c6b-4fd1-40e4-a831-b226e922913a">
+
 
 
 
