@@ -36,6 +36,8 @@ Here are the first 500 numbers (2-500)
 100 primes v 100 composites
 <img width="1152" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/4f3cd8fe-e182-46a0-890e-a0f18f5551c5">
 
+Here I scaled composites to match the density of the primes. It appears that the density and scaling itself explains much/most of the interesting shapes and pattern differences
+<img width="1406" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/464f30da-eb4c-4428-afb7-79f43bd23520">
 
 Here is a zoomed-in plot of all composites, linearly scaling for each subsequent composite number
 <img width="688" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/a35158a7-e5df-4aa7-839e-17badd89bda3">
