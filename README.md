@@ -43,17 +43,9 @@ Here is a zoomed-in plot of all composites, linearly scaling for each subsequent
 <img width="688" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/a35158a7-e5df-4aa7-839e-17badd89bda3">
 
 
-And here is a plot of all prime numbers up to 50, linearly scaling for each prime addition. Each color is a different type of prime
-<img width="688" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/9a31711f-52bb-474e-b352-cce2ac3c2cee">
+And here is a plot of all prime numbers up to 50, linearly scaling for each prime addition. Each color is a different type of prime<img width="688" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/9a31711f-52bb-474e-b352-cce2ac3c2cee">
 
-A few observations:
-1. When we add in all of the numbers it looks sort of like a number of railroad tracks on the righthand axis.
-2. There is some interesting set of effects at the 45 degree markers with prime numbers
-3. Prime numbers seem to "fill in" the circle almost immediately as we linearly scale outwards!  It almost feels like this pattern is "more pleasing" and symmetrical! 
-
-
-
-
+16 primary angles that show up, with these 4 the most obvious, especially at lower n
 <img width="695" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/fe27d0ac-ba97-4243-bcad-f0667483afd8">
 
 
