@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider
 from matplotlib.lines import Line2D
 import numpy as np
-from collections import Counter
 import matplotlib.animation as animation
 
 def theta(k, n):
@@ -17,7 +16,7 @@ def draw_single_circle(n, m, rotation=0):
     y_m = [np.sin(angle) for angle in angles_m]
     return x_n, y_n, x_m, y_m
 
-tolerance = 0.05  # You can adjust this value to fine-tune overlap detection
+tolerance = 0.05
 
 def calculate_overlaps(n, m, rotation):
     overlaps = []
@@ -25,16 +24,23 @@ def calculate_overlaps(n, m, rotation):
     angles_m = [(theta(k, m) + rotation) % (2 * np.pi) for k in range(1, m + 1)]
     for angle_n in angles_n:
         for angle_m in angles_m:
-            if abs(angle_n - angle_m) < tolerance: # Adjusted tolerance
+            if abs(angle_n - angle_m) < tolerance:
                 overlaps.append((np.cos(angle_n), np.sin(angle_n)))
     return overlaps
 
+overlap_lines = []
+
 def draw_lines_for_overlap(ax, overlaps):
+    global overlap_lines
     if overlaps:
         center = (0, 0)
         for overlap in overlaps:
             line = Line2D([center[0], overlap[0]], [center[1], overlap[1]], color='green')
+            overlap_lines.append(line)
             ax.add_line(line)
+
+    for line in overlap_lines:
+        ax.add_line(line)
 
 def update_prettier(val):
     rotation_angle = val
@@ -51,17 +57,10 @@ def update_prettier(val):
     ax.add_artist(plt.Circle((0, 0), 1, color='black', fill=False, linestyle='--'))
     ax.legend(loc='upper right', fontsize=8)
     plt.draw()
-    if rotation_angle >= 2 * np.pi:
-        max_overlap, times_occurred = overlap_stats(n, m)
-        result_text = f"Max Overlap: {max_overlap}\nOccurred: {times_occurred} times"
-        ax.text(0, -1.2, result_text, ha='center', va='center', fontsize=9, bbox=dict(facecolor='white', alpha=0.5))
 
 def animate(frame):
     global previous_frame
     rotation_angle = (frame * 2 * np.pi / 200) % (2 * np.pi)
-    overlaps = calculate_overlaps(n, m, rotation_angle)
-    if len(overlaps) == 3:
-        frame = previous_frame  # Repeat the frame to create a pause effect
     slider.set_val(rotation_angle)
     update_prettier(rotation_angle)
     previous_frame = frame
