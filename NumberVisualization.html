@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <script>
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        var maxNumber = 100;
+        var rotationSpeed = 0.004;
+        var groups = [];
+        var increment = 1.5; // Linear increment between radii
+
+        // Function to draw a circle with nodes
+        function drawCircle(numNodes, radius, color) {
+            var group = new THREE.Group();
+            var angles = Array.from({ length: numNodes }, (_, i) => 2 * Math.PI * i / numNodes);
+
+            // Draw nodes as spheres
+            angles.forEach((angle, i) => {
+                var sphereGeometry = new THREE.SphereGeometry(0.2, 32, 32);
+                var sphereMaterial = new THREE.MeshBasicMaterial({ color: color });
+                var sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+                sphere.position.x = radius * Math.cos(angle);
+                sphere.position.y = radius * Math.sin(angle);
+                group.add(sphere);
+            });
+
+            scene.add(group);
+            groups.push(group);
+        }
+
+        // Draw concentric circles with linear spacing
+        for (let i = 2; i <= maxNumber; i++) {
+            drawCircle(i, i * increment, new THREE.Color(`hsl(${(i - 2) / (maxNumber - 2) * 360}, 100%, 50%)`));
+        }
+
+        // Draw connections
+        function drawConnections() {
+            for (let i = 0; i < groups.length; i++) {
+                var nodesA = groups[i].children;
+                for (let j = i + 1; j < groups.length; j++) {
+                    var nodesB = groups[j].children;
+                    nodesA.forEach(nodeA => {
+                        nodesB.forEach(nodeB => {
+                            var distance = nodeA.position.distanceTo(nodeB.position);
+                            if (distance < 1) {
+                                var material = new THREE.LineBasicMaterial({ color: 0x000000, linewidth: 2 });
+                                var geometry = new THREE.Geometry();
+                                geometry.vertices.push(nodeA.position);
+                                geometry.vertices.push(nodeB.position);
+                                var line = new THREE.Line(geometry, material);
+                                scene.add(line);
+                            }
+                        });
+                    });
+                }
+            }
+        }
+
+        drawConnections();
+
+        // Camera position
+        camera.position.z = maxNumber * increment * 1.5;
+
+        // Render loop
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Apply rotation
+            groups.forEach((group, i) => {
+                if ((i + 2) % 2 === 0) {
+                    group.rotation.z += rotationSpeed;
+                } else {
+                    group.rotation.z -= rotationSpeed;
+                }
+            });
+
+            renderer.render(scene, camera);
+        }
+
+        animate();
+    </script>
+</body>
+</html>
