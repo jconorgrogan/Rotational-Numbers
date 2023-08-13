@@ -1,44 +1,76 @@
-import numpy as np
+ import numpy as np
 import matplotlib.pyplot as plt
 
-def decompose_complex_number(number):
-    """Decompose a complex number into its real part, imaginary part, and phase."""
-    if not isinstance(number, complex):
-        raise ValueError("Input should be a complex number.")
+def number_properties_harmonic(number):
+    """Determine amplitude and phase based on a number with harmonic relationships."""
     
-    real_part = number.real
-    imaginary_part = number.imag
-    phase = np.angle(number)
+    # Decompose the number into its integer and fractional parts
+    integer_part = int(number)
+    fractional_part = number - integer_part
     
-    return real_part, imaginary_part, phase
+    # Prime factors (with repetition) extraction
+    prime_factors = []
+    i = 2
+    while i * i <= integer_part:
+        if integer_part % i:
+            i += 1
+        else:
+            integer_part //= i
+            prime_factors.append(i)
+    if integer_part > 1:
+        prime_factors.append(integer_part)
+    
+    # Amplitude is the product of prime factors
+    amplitude = np.prod(prime_factors)
+    
+    # Phase based on modulo 2pi, with an adjustment based on the fractional part
+    phase = (number % 1) * (2 * np.pi)
+    
+    # Polarization
+    polarization = (-1)**(integer_part % 2)
+    
+    return amplitude, phase, polarization, prime_factors
 
-def number_to_waveform_complex(number, t, base_frequency=1):
-    """Translate a complex number into a waveform."""
-    real_part, imaginary_part, phase = decompose_complex_number(number)
-    waveform = real_part * np.cos(base_frequency * 2 * np.pi * t + phase) + \
-               imaginary_part * np.sin(base_frequency * 2 * np.pi * t + phase)
+def number_to_waveform_prime_influence(number, rotation, amplitude, polarization, prime_factors, t):
+    """Translate a number into a waveform influenced by its prime factors."""
+
+    # Start with a base waveform of zeros
+    waveform = np.zeros_like(t)
+
+    # Each prime factor contributes a wave
+    for prime in prime_factors:
+        wave = (amplitude / prime) * np.sin(2 * np.pi * prime * t + rotation)
+
+        # Add the wave to the current waveform (without damping)
+        waveform += wave
+
+    # Apply polarization
+    waveform *= polarization
+
     return waveform
 
-def plot_waveform_complex(number, t):
-    """Generate and plot a waveform corresponding to a complex number."""
-    real_part, imaginary_part, phase = decompose_complex_number(number)
-    waveform = number_to_waveform_complex(number, t)
+def plot_waveform_prime_influence(number, t):
+    """Generate and plot a waveform corresponding to a number influenced by its prime factors."""
 
+    amplitude, rotation, polarization, prime_factors = number_properties_harmonic(number)
+    
+    # Generate the corresponding waveform
+    waveform = number_to_waveform_prime_influence(number, rotation, amplitude, polarization, prime_factors, t)
+
+    # Plot the waveform
     plt.figure(figsize=(6, 4))
-    plt.plot(t, waveform, label=f"Real={real_part}, Imaginary={imaginary_part}")
-    plt.title(f'Waveform for Number {number}, Phase = {phase:.2f}')
+    plt.plot(t, waveform)
+    plt.title('Waveform for Number = {}, Rotation = {:.2f}, Amplitude = {}, Polarization = {}, Prime Factors = {}'.format(number, rotation, amplitude, polarization, prime_factors))
     plt.xlabel('Time')
     plt.ylabel('Amplitude')
-    plt.legend()
     plt.grid(True)
 
 # Define a time array
 t = np.linspace(0, 1, 500)
 
-# Test with complex numbers
-numbers_to_test = [5+3j, 7+1j]
+# Test with various numbers
+numbers_to_test = [9999999999]
 for number in numbers_to_test:
-    plot_waveform_complex(number, t)
-
+    plot_waveform_prime_influence(number, t)
 plt.tight_layout()
-plt.show()
+plt.show() 
