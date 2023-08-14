@@ -53,20 +53,254 @@ And here is a plot of all prime numbers up to 50, linearly scaling for each prim
 
 RNT offers a geometric perspective on the relationships between numbers and mathematical operations, Addition involves appending new nodes and recalibrating to maintain equidistance. It’s a disruption of the existing structure, whereas multiplication and division, being scaling operations, maintain a certain symmetry and uniformity. You will notice a fair amount of connections to signal processing:
 
-| Operator       | Mathematical Basis         | Effect on Nodes | Core Mathematical Components  | DSP Connection      |
-| -------------- | -------------------------- | --------------- | ----------------------------- | ------------------- |
-| Addition       | Appending new nodes        | Addition of new nodes and recalibration to maintain equidistance | theta(n) = 2pi(n-1) / (n+a) | Superposition Principle |
-| Subtraction    | Removal of existing nodes  | Removal of nodes and recalibration to maintain equidistance | theta(n) = 2pi(n-1) / (n-a) | Wave Cancellation (Destructive Interference) |
-| Multiplication | Creating copies of the nodes and redistributing them around the circle | Repetition of nodes based on the multiplication factor; each copy rotated by an angle relative to the previous copy | theta(n, k) = 2pi(n-1) / a + 2pi(k-1) / b | Frequency Modulation |
-| Division       | The process of division in RNT can be understood as a two-step process: a counter-rotation followed by a scaling operation.  | Redistribution of nodes based on the division factor; each copy rotated by an angle relative to the previous copy | theta(n, k) = 2pi(n-1) / a - 2pi(k-1) / b | Frequency Demodulation |
-| Fraction (Decimal) | Partial completion of circle | Placement of nodes less than a full circle | theta(n) = 2pi(n-1) / (n+alpha) (where alpha < 1) | Phase Modulation |
-| Negation       | Flipping of the nodes      | Nodes flipped across the origin | theta(n) = -2pi(n-1) / n | Wave Inversion (180 Degree Phase Shift) |
-| Absolute value | Absolute value of nodes    | All nodes moved to the positive half | theta(n) = abs(2pi(n-1) / n) | Rectification (All Positive Wave) |
-| Exponentiation | Spiral formation           | Nodes are placed in an expanding spiral pattern | theta(n) = r^(n-1)e^(2pi i(n-1)/n) | Amplitude Modulation |
-| Logarithm      | Inverse spiral formation   | Nodes are placed in a contracting spiral pattern | theta(n) = log(r^(n-1))e^(2pi i(n-1)/n) | Signal Compression |
-| Modulo         | Folding back of nodes      | Nodes beyond the modulo number are folded back | theta(n) = 2pi((n-1) mod m) / m | Wave Wrapping (Overflow Handling) |
-
-
+Operator	Mathematical Basis	Effect on Nodes	Core Mathematical Components	DSP Connection
+Addition	Addition of nodes	Addition of new nodes; each recalibrated to maintain equidistance	
+�
+(
+�
+)
+=
+2
+�
+(
+�
+−
+1
+)
+�
++
+�
+θ(n)= 
+n+a
+2π(n−1)
+​
+ 	Superposition Principle
+Subtraction	Removal of nodes	Removal of nodes; each recalibrated to maintain equidistance	
+�
+(
+�
+)
+=
+2
+�
+(
+�
+−
+1
+)
+�
+−
+�
+θ(n)= 
+n−a
+2π(n−1)
+​
+ 	Wave Cancellation (Destructive Interference)
+Multiplication	Replication and redistribution of nodes	Repetition of nodes based on multiplication factor; each copy rotated by an angle relative to previous	
+�
+(
+�
+,
+�
+)
+=
+2
+�
+(
+�
+−
+1
+)
+�
++
+2
+�
+(
+�
+−
+1
+)
+�
+θ(n,k)= 
+a
+2π(n−1)
+​
+ + 
+b
+2π(k−1)
+​
+ 	Frequency Modulation
+Division	Counter-rotation and scaling	Redistribution of nodes based on division factor; each copy rotated by an angle relative to previous	
+�
+(
+�
+,
+�
+)
+=
+2
+�
+(
+�
+−
+1
+)
+�
+−
+2
+�
+(
+�
+−
+1
+)
+�
+θ(n,k)= 
+a
+2π(n−1)
+​
+ − 
+b
+2π(k−1)
+​
+ 	Frequency Demodulation
+Fraction (Decimal)	Partial completion of circle	Placement of nodes less than a full circle	
+�
+(
+�
+)
+=
+2
+�
+(
+�
+−
+1
+)
+�
++
+�
+θ(n)= 
+n+α
+2π(n−1)
+​
+  (where 
+�
+<
+1
+α<1)	Phase Modulation
+Negation	Inversion of nodes	Nodes flipped across the origin	
+�
+(
+�
+)
+=
+−
+2
+�
+(
+�
+−
+1
+)
+�
+θ(n)=− 
+n
+2π(n−1)
+​
+ 	Wave Inversion (180 Degree Phase Shift)
+Absolute value	Positioning nodes in positive half	All nodes moved to the positive half	(\theta(n) = \left	\frac{2\pi(n-1)}{n}\right
+Exponentiation	Formation of expanding spiral	Nodes placed in expanding spiral pattern	
+�
+(
+�
+)
+=
+�
+(
+�
+−
+1
+)
+�
+2
+�
+�
+(
+�
+−
+1
+)
+�
+θ(n)=r 
+(n−1)
+ e 
+n
+2πi(n−1)
+​
+ 
+ 	Amplitude Modulation
+Logarithm	Formation of contracting spiral	Nodes placed in contracting spiral pattern	
+�
+(
+�
+)
+=
+log
+⁡
+(
+�
+(
+�
+−
+1
+)
+)
+�
+2
+�
+�
+(
+�
+−
+1
+)
+�
+θ(n)=log(r 
+(n−1)
+ )e 
+n
+2πi(n−1)
+​
+ 
+ 	Signal Compression
+Modulo	Folding back of nodes	Nodes beyond modulo number are folded back	
+�
+(
+�
+)
+=
+2
+�
+(
+(
+�
+−
+1
+)
+m
+o
+d
+ 
+ 
+�
+)
+�
+θ(n)= 
+m
+2π((n−1)modm)
+​
+ 	Wave Wrapping (Overflow Handling)
 **The Complex Plane**
 
 In the RNS, multiplication in the complex domain is visualized as a combination of rotation in the complex plane and movement along a helix. This helical interpretation offers a three-dimensional depth to the traditional two-dimensional complex plane, enhancing our understanding of operations involving imaginary components.
