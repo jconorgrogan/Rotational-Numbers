@@ -51,9 +51,7 @@ And here is a plot of all prime numbers up to 50, linearly scaling for each prim
 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/29b221f0-c7b1-48f9-bdf8-db6c8175d570)
 
-RNT offers a geometric perspective on the relationships between numbers and mathematical operations
-
-The following operators (which have a lot of connection with signal processing) are used in RNT:
+RNT offers a geometric perspective on the relationships between numbers and mathematical operations, Addition involves appending new nodes and recalibrating to maintain equidistance. It’s a disruption of the existing structure, whereas multiplication and division, being scaling operations, maintain a certain symmetry and uniformity. You will notice a fair amount of connections to signal processing:
 
 | Operator       | Mathematical Basis         | Effect on Nodes | Core Mathematical Components  | DSP Connection      |
 | -------------- | -------------------------- | --------------- | ----------------------------- | ------------------- |
