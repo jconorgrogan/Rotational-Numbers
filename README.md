@@ -17,16 +17,17 @@ This geometric representation leads to an intuitive method for discerning prime 
 
 If you rotate each set of nodes by their respective angles, no two nodes will overlap with the starting positions of any nodes throughout a full rotation unless a divisor relationship exists between them.
 
-Here is a visual representation: 3 (red dots, 120 degrees apart) is a factor of 9
+Here is a visual representation: 7 (red dots, equally spaced) is a factor of 21
 
-![circle_overlap](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/d2a6289c-cd20-4ae2-9e49-33f861f5998d)
+![circle_overlap](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/320e879d-428f-42bb-a3cb-79ba8d6a1311)
 
 2 does not "fit" within the 5 when you rotate is. Same with 3 and 4.  5 is therefore prime
-![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/73a1a797-ec5e-425d-a7b3-c13ca8ea1a43)
 
-Here is python code that uses this rotational technique to find prime factors https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/blob/main/PrimeCheckAndFactorization.py It works! (though its far less computationally efficient than other methods)
+![circle_overlap2](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/ebc9b49f-44c9-4adc-bad1-b6bcdf038c3f)
 
-With this new way of representing numbers comes a new way of visualizing their patterns.
+## 3. Patterns
+
+Displaying these numbers in linearly expanding concentric circles is an interesting way of seeing number patterns.
 
 Here are the first 500 numbers (2-500)
 <img width="848" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/8b873bd5-5907-49ec-972b-9bdb1355d6e4">
@@ -40,20 +41,19 @@ Here I scaled composites to match the density of the primes. It appears that the
 Here is a zoomed-in plot of all composites, linearly scaling for each subsequent composite number
 <img width="688" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/a35158a7-e5df-4aa7-839e-17badd89bda3">
 
-
 And here is a plot of all prime numbers up to 50, linearly scaling for each prime addition. Each color is a different type of prime<img width="688" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/9a31711f-52bb-474e-b352-cce2ac3c2cee">
 
 16 primary angles that show up, with these 4 the most obvious, especially at lower n
 <img width="695" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/fe27d0ac-ba97-4243-bcad-f0667483afd8">
 
 
-## 3. Operations in ENT
+## 3. Operations in RNT
 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/29b221f0-c7b1-48f9-bdf8-db6c8175d570)
 
-ENT offers a geometric perspective on the relationships between numbers and mathematical operations
+RNT offers a geometric perspective on the relationships between numbers and mathematical operations
 
-The following operators (which have a lot of connection with signal processing) are used in ENT:
+The following operators (which have a lot of connection with signal processing) are used in RNT:
 
 | Operator       | Mathematical Basis         | Effect on Nodes | Core Mathematical Components  | DSP Connection      |
 | -------------- | -------------------------- | --------------- | ----------------------------- | ------------------- |
