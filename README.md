@@ -1,9 +1,9 @@
 
 ## 1. Introduction
 
-Equidistant Number Theory (ENT) or Rotational Number Theory (RNT) is a speculative attempt to find a new way to visualize mathmatics (And a real way to find prime factors!)  ENT offers a bijective mapping between number theory and geometry For every mathematical operation or number, there's a unique geometrical representation. 
+Rotational Number Theory (RNT) is an attempt to find a novel way to visualize mathmatics (And a real way to find prime factors!)  
 
-In the Equidistant Number Theory, each natural number `n` is depicted by `n` equidistant nodes on a unit circle. All of the other elements of mathmatics derive from this concept. 
+In RNT, each natural number `n` is depicted by `n` equidistant nodes on a unit circle.
 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/d94798c6-aa7c-4ece-84b2-6a17fab5192b)
 
@@ -11,17 +11,15 @@ The position of a node representing the `k`-th number is determined by the angle
 
 ![equation](https://latex.codecogs.com/gif.latex?\theta_k&space;=&space;\frac{2\pi(k-1)}{n})
 
-The subtraction of 1 ensures that the first number in the sequence starts at \(0\) radians or degrees. TLDR this means that we start every circle with a node in the far right side.
-
 ## 2. Prime and Factor Identification via Rotational Overlap
 
 This geometric representation leads to an intuitive method for discerning prime numbers and factorizing composites.
 
 If you rotate each set of nodes by their respective angles, no two nodes will overlap with the starting positions of any nodes throughout a full rotation unless a divisor relationship exists between them.
 
+Here is a visual representation: 3 (red dots, 120 degrees apart) is a factor of 9
 
-Here is a visual representation: 3 (red dots, spaced equidistantly) is a factor of 6. Notice that you can "fit" 2 equidisdant "3s" (after one rotation) in the number 6
-![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/8f04aa3c-5ee2-4f4a-b60c-ac3f1c119bc4)
+![circle_overlap](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/d2a6289c-cd20-4ae2-9e49-33f861f5998d)
 
 2 does not "fit" within the 5 when you rotate is. Same with 3 and 4.  5 is therefore prime
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/73a1a797-ec5e-425d-a7b3-c13ca8ea1a43)
