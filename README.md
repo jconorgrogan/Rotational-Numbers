@@ -43,7 +43,7 @@ Here is a zoomed-in plot of all composites, linearly scaling for each subsequent
 
 And here is a plot of all prime numbers up to 50, linearly scaling for each prime addition. Each color is a different type of prime<img width="688" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/9a31711f-52bb-474e-b352-cce2ac3c2cee">
 
-16 primary angles that show up, with these 4 the most obvious, especially at lower n
+16 primary angles that show up, with these 8 the most obvious, especially at lower n
 <img width="695" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/fe27d0ac-ba97-4243-bcad-f0667483afd8">
 
 
