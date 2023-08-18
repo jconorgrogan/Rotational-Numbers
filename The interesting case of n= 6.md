@@ -1,35 +1,25 @@
-### Theorem:
+For a circle with radius \( R \) and \( n \) equally spaced nodes, the task is to find the values of \( n \) that allow the distance \( D \) between adjacent nodes to fit an integer number of times across the diameter of the circle. The distance \( D \) between adjacent nodes is given by:
 
-For a circle with radius \( R \) and \( n \) equally spaced nodes, the only values of \( n \) that allow the distance \( D \) between adjacent nodes to fit an integer number of times across the circumference of the circle are \( n = 2 \) and \( n = 6 \).
+\[ D = 2R \sin\left(\frac{\pi}{n}\right) \]
 
-### Proof:
+Conclusion:
+The instances where the distance \( D \) between nodes fits as an integer multiple across the diameter of the circle are:
 
-1. **Define the distance \( D \):**
-   The distance \( D \) between adjacent nodes is given by:
-   \[
-   D = 2R \sin\left(\frac{\pi}{n}\right)
-   \]
+- \( n = 2 \): The distance \( D \) fits exactly 1 time across the diameter, dividing the circle into two equal parts.
+- \( n = 6 \): The distance \( D \) fits exactly 2 times across the diameter, dividing the circle into six equal parts.
+- \( n = \infty \): A more abstract concept, where the distance \( D \) fits an infinite number of times across the diameter, representing a continuum or infinite division.
 
-2. **Analyze the case for \( n = 2 \):**
-   For \( n = 2 \), the expression for \( D \) becomes:
-   \[
-   D = 2R \sin\left(\frac{\pi}{2}\right) = 2R
-   \]
-   Since \( D \) is equal to the diameter, it fits exactly \( \frac{1}{2} \) times across the circumference, and \( n = 2 \) is a valid case.
+The condition we're looking for is when the distance \( D \) between nodes fits as an integer multiple across the diameter. We have:
 
-3. **Analyze the case for \( n = 6 \):**
-   For \( n = 6 \), the expression for \( D \) becomes:
-   \[
-   D = 2R \sin\left(\frac{\pi}{6}\right) = R
-   \]
-   Since \( D \) is equal to the radius, it fits exactly once across the radius, and \( n = 6 \) is a valid case.
+\[ D = 2R \sin\left(\frac{\pi}{n}\right) \times k = 2R \]
 
-4. **Show that no other \( n < 6 \) satisfies the condition:**
-   For \( n = 3, 4, 5 \), the values of \( D \) do not fit an integer number of times across the circumference:
-   - \( n = 3 \): \( D = R\sqrt{3} \)
-   - \( n = 4 \): \( D = \sqrt{2}R \)
-   - \( n = 5 \): \( D = 2R \sin\left(\frac{\pi}{5}\right) \)
-   None of these values fit an integer number of times across the circumference.
+Simplifying, we get:
 
-5. **Show that no \( n > 6 \) satisfies the condition:**
-   For \( n > 6 \), the expression \( n \sin\left(\frac{\pi}{n}\right) < \pi \), leading to a contradiction. No \( n > 6 \) can satisfy the condition.
+\[ \sin\left(\frac{\pi}{n}\right) = \frac{1}{k} \]
+
+The sine function has a range between -1 and 1, so the only integer values of \( k \) that would make the equation valid are 1 and 2.
+
+- For \( k = 1 \), we get \( \sin\left(\frac{\pi}{n}\right) = 1 \), which leads to \( n = 2 \).
+- For \( k = 2 \), we get \( \sin\left(\frac{\pi}{n}\right) = \frac{1}{2} \), which leads to \( n = 6 \).
+
+No other integer values for \( k \) will satisfy the equation, hence these are the only integer solutions for \( n \), besides the limit case of \( n = \infty \).
