@@ -42,7 +42,13 @@ import numpy as np
 def draw_circle_and_compute_number_with_nodes(blue_line_end_x, radius):
     # Calculating the blue line's end point
     blue_line_end_y = np.sqrt(radius**2 - blue_line_end_x**2)
-    
+
+    # Calculate the angle in radians
+    angle_radians = np.arccos(blue_line_end_x / radius)
+
+    # Calculate the natural number based on equidistant nodes
+    natural_number = int(np.floor(2 * np.pi / angle_radians))
+
     # Draw the circle
     circle = plt.Circle((0, 0), radius, color='blue', fill=False)
     fig, ax = plt.subplots()
@@ -54,18 +60,16 @@ def draw_circle_and_compute_number_with_nodes(blue_line_end_x, radius):
     # Draw the blue line
     plt.plot([blue_line_end_x, blue_line_end_x], [0, blue_line_end_y], 'b-')
 
-    # Calculate the angle in radians
-    angle_radians = np.arctan2(blue_line_end_y, blue_line_end_x)
-
-    # Calculate the natural number based on equidistant nodes
-    natural_number = int(np.floor(2 * np.pi / angle_radians))
+    # Draw radius to the end of the blue line
+    plt.plot([0, blue_line_end_x], [0, blue_line_end_y], 'g--')
 
     # Draw equidistant nodes around the complete circle
-    for i in range(natural_number):
-        angle = i * 2 * np.pi / natural_number
-        x = radius * np.cos(angle)
-        y = radius * np.sin(angle)
-        plt.scatter(x, y, c='green', marker='x', s=100)
+    if 2 * np.pi % angle_radians < 1e-6:  # Ensuring the angle divides 2*pi evenly
+        for i in range(natural_number):
+            angle = i * 2 * np.pi / natural_number
+            x = radius * np.cos(angle)
+            y = radius * np.sin(angle)
+            plt.scatter(x, y, c='green', marker='x', s=100)
 
     plt.xlim(-radius, radius)
     plt.ylim(-radius, radius)
