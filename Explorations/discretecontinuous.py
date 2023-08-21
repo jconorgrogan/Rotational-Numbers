@@ -1,3 +1,12 @@
+//1. **Circle and Segment:** Consider a circle with radius \( r \) and a segment of length \( x \) where \( 0 \leq x \leq r \).
+//2. **Folding the Segment:** Fold the segment onto the circle, creating a right triangle with hypotenuse \( r \), adjacent side \( x \), and opposite side \( \sqrt{r^2 - x^2} \).
+//3. **Calculating the Angle:** The angle \( \theta \) in radians corresponding to the folded segment is given by
+//   \[
+ //  \theta = \arccos\left(\frac{x}{r}\right).
+//   \]
+//4. **Representing Any Angle:** Since \( x \) can be any value between \( 0 \) and \( r \), \( \theta \) can be any value between \( 0 \) and \( \pi \).
+
+
 import matplotlib.pyplot as plt
 import numpy as np
 
