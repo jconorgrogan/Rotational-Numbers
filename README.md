@@ -51,20 +51,19 @@ And here is a plot of all prime numbers up to 50, linearly scaling for each prim
 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/29b221f0-c7b1-48f9-bdf8-db6c8175d570)
 
-RNT offers a geometric perspective on the relationships between numbers and mathematical operations, Addition involves appending new nodes and recalibrating to maintain equidistance. It’s a disruption of the existing structure, whereas multiplication and division, being scaling operations, maintain a certain symmetry and uniformity. You will notice a fair amount of connections to signal processing:
+RNT offers a geometric perspective on the relationships between numbers and mathematical operations.
 
-| Operator         | Mathematical Basis          | Effect on Nodes                                    | Core Mathematical Components          | DSP Connection                 |
-|------------------|-----------------------------|----------------------------------------------------|--------------------------------------|--------------------------------|
-| Addition         | Addition of nodes           | Addition of new nodes; each recalibrated to maintain equidistance | \(\theta(n) = \frac{2\pi(n-1)}{n+a}\)  | Superposition Principle        |
-| Subtraction      | Removal of nodes            | Removal of nodes; each recalibrated to maintain equidistance  | \(\theta(n) = \frac{2\pi(n-1)}{n-a}\)  | Wave Cancellation (Destructive Interference) |
-| Multiplication   | Replication and redistribution of nodes | Repetition of nodes based on multiplication factor; each copy rotated by an angle relative to previous | \(\theta(n, k) = \frac{2\pi(n-1)}{a} + \frac{2\pi(k-1)}{b}\)  | Frequency Modulation          |
-| Division         | Counter-rotation and scaling | Redistribution of nodes based on division factor; each copy rotated by an angle relative to previous | \(\theta(n, k) = \frac{2\pi(n-1)}{a} - \frac{2\pi(k-1)}{b}\) | Frequency Demodulation        |
-| Fraction (Decimal) | Partial completion of circle | Placement of nodes less than a full circle               | \(\theta(n) = \frac{2\pi(n-1)}{n+\alpha}\) (where \(\alpha < 1\)) | Phase Modulation              |
-| Negation         | Inversion of nodes          | Nodes flipped across the origin                          | \(\theta(n) = -\frac{2\pi(n-1)}{n}\) | Wave Inversion (180 Degree Phase Shift) |
-| Absolute value   | Positioning nodes in positive half | All nodes moved to the positive half                      | \(\theta(n) = \left|\frac{2\pi(n-1)}{n}\right|\) | Rectification (All Positive Wave) |
-| Exponentiation   | Formation of expanding spiral | Nodes placed in expanding spiral pattern                  | \(\theta(n) = r^{(n-1)}e^{\frac{2\pi i(n-1)}{n}}\) | Amplitude Modulation          |
-| Logarithm        | Formation of contracting spiral | Nodes placed in contracting spiral pattern                | \(\theta(n) = \log(r^{(n-1)})e^{\frac{2\pi i(n-1)}{n}}\) | Signal Compression             |
-| Modulo           | Folding back of nodes       | Nodes beyond modulo number are folded back                | \(\theta(n) = \frac{2\pi((n-1) \mod m)}{m}\) | Wave Wrapping (Overflow Handling) |
+### Addition of 1
+To add 1 to a number `n`, use the equation:
+\[
+\theta(n+1) = \frac{360}{n} - \frac{360}{n(n+1)}
+\]
+
+### General Addition of k
+To add a positive integer `k` to a number `n`, use the equation:
+\[
+\theta(n+k) = \frac{360}{n} - k \cdot \left( \frac{360}{n(n+k)} \right)
+\]
 
  
 **The Complex Plane**
