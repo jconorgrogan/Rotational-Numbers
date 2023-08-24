@@ -3,7 +3,7 @@
 
 Rotational Number Theory (RNT) is an attempt to find a novel way to visualize mathmatics (And a real way to find prime factors!)  
 
-In RNT, each natural number `n` is depicted by `n` equidistant nodes on a unit circle.
+In RNT, the entire set of natural numbers is compactified onto a unit circle, analogous to the one-point compactification of the real line. This forms a topological space homeomorphic to a circle, with infinity represented as a single point. Each natural number `n` is depicted by `n` equidistant nodes on a unit circle.
 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/d94798c6-aa7c-4ece-84b2-6a17fab5192b)
 
@@ -15,7 +15,7 @@ The position of a node representing the `k`-th number is determined by the angle
 
 This geometric representation leads to an intuitive method for discerning prime numbers and factorizing composites.
 
-If you rotate each set of nodes by their respective angles, no two nodes will overlap with the starting positions of any nodes throughout a full rotation unless a divisor relationship exists between them.
+If you rotate each set of nodes by their respective angles, no two nodes will overlap with the starting positions of any nodes throughout a full rotation unless a divisor relationship exists between them. This is connected to the mathematical structure of primitive n-th roots of unity in the complex plane.
 
 Here is a visual representation: 7 (red dots, equally spaced) is a factor of 21
 
