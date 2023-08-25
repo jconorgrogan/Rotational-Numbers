@@ -37,8 +37,6 @@ Here are the first 500 numbers (2-500)
 
 ## 3. Operations in RNT
 
-![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/29b221f0-c7b1-48f9-bdf8-db6c8175d570)
-
 RNT offers a geometric perspective on the relationships between numbers and mathematical operations.
 
 ### Addition of 1
@@ -53,7 +51,7 @@ To add a positive integer `k` to a number `n`, use the equation:
 \theta(n+k) = \frac{360}{n} - k \cdot \left( \frac{360}{n(n+k)} \right)
 \]
 
-Take any number n. Add in N equidistant nodes between the first angle node and the origin node. Then count counterclockwise from the origin node, and for n+1 number node you will find the exact angle for corresponding n+1
+Visually, take any number n. Add in N equidistant nodes between the first angle'd node and the origin node. Then count counterclockwise from the origin node, and for n+1 number node you will find the exact angle for corresponding n+1
 
  ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/71fb2ce5-05de-4121-9f2f-c55c802d0a9c)
 
