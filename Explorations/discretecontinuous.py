@@ -20,53 +20,55 @@
    - **6 Equidistant Nodes**: Place 6 equidistant nodes around the circle at each 60° interval. These nodes represent the geometric structure arising from the original 1/2 ratio.
    - **Symmetry and Geometry**: This construction exhibits rotational symmetry and the geometric principles of division, proportion, and angle preservation.
 
-
 import matplotlib.pyplot as plt
 import numpy as np
 
-def draw_circle_and_compute_number_with_nodes(blue_line_end_x, radius):
-    # Calculating the blue line's end point
-    blue_line_end_y = np.sqrt(radius**2 - blue_line_end_x**2)
+def plot_unit_circle(n):
+    angles = np.linspace(0, 2 * np.pi, n, endpoint=False)
+    x = np.cos(angles)
+    y = np.sin(angles)
+    plt.plot(np.cos(np.linspace(0, 2 * np.pi, 100)), np.sin(np.linspace(0, 2 * np.pi, 100)), 'k-') # Circle
+    plt.plot(x, y, 'ro') # Nodes
+    for i in range(n):
+        plt.arrow(0, 0, x[i], y[i], head_width=0.05, head_length=0.1, fc='blue', ec='blue') # Lines to nodes
+        plt.text(x[i]*1.1, y[i]*1.1, f'{i+1}', fontsize=12, color='red') # Labels
+    plt.xlim(-1.5, 1.5)
+    plt.ylim(-1.5, 1.5)
+    plt.axhline(0, color='grey', lw=0.5)
+    plt.axvline(0, color='grey', lw=0.5)
+    plt.axis('equal')
+    plt.axis('off')
 
-    # Calculate the angle in radians
-    angle_radians = np.arccos(blue_line_end_x / radius)
+def plot_final_progression():
+    plt.figure(figsize=(10, 5))
 
-    # Calculate the natural number based on equidistant nodes
-    natural_number = int(np.floor(2 * np.pi / angle_radians))
+    # For n=3
+    plt.subplot(1, 2, 1)
+    plot_unit_circle(3)
+    plt.title('n = 3')
 
-    # Draw the circle
-    circle = plt.Circle((0, 0), radius, color='blue', fill=False)
-    fig, ax = plt.subplots()
-    ax.add_artist(circle)
+    # For n=4 within the context of n=3 (120-degree angle between nodes 1 and 2)
+    angles_n4 = np.linspace(0, 2 * np.pi / 3, 5)  # 4 additional nodes within 120 degrees between nodes 1 and 2
+    x_n4 = np.cos(angles_n4)
+    y_n4 = np.sin(angles_n4)
 
-    # Draw the line from the origin to the blue line's start point
-    plt.plot([0, blue_line_end_x], [0, 0], 'r-')
+    plt.subplot(1, 2, 2)
+    plt.plot(np.cos(np.linspace(0, 2 * np.pi, 100)), np.sin(np.linspace(0, 2 * np.pi, 100)), 'k-') # Circle
+    plt.plot(x_n4, y_n4, 'ro') # Additional nodes for n=4 within 120-degree angle
+    for i in range(4):
+        plt.arrow(0, 0, x_n4[i], y_n4[i], head_width=0.05, head_length=0.1, fc='blue', ec='blue') # Lines to nodes
+        plt.text(x_n4[i]*1.1, y_n4[i]*1.1, f'{i+1}', fontsize=12, color='red') # Labels
+    plt.arrow(0, 0, x_n4[4], y_n4[4], head_width=0.05, head_length=0.1, fc='green', ec='green') # Line to node 4 in green
+    plt.text(x_n4[4]*1.1, y_n4[4]*1.1, '4', fontsize=12, color='green') # Label for node 4 in green
+    plt.xlim(-1.5, 1.5)
+    plt.ylim(-1.5, 1.5)
+    plt.axhline(0, color='grey', lw=0.5)
+    plt.axvline(0, color='grey', lw=0.5)
+    plt.title('n = 4 within 120° angle')
+    plt.axis('equal')
+    plt.axis('off')
 
-    # Draw the blue line
-    plt.plot([blue_line_end_x, blue_line_end_x], [0, blue_line_end_y], 'b-')
-
-    # Draw radius to the end of the blue line
-    plt.plot([0, blue_line_end_x], [0, blue_line_end_y], 'g--')
-
-    # Draw equidistant nodes around the complete circle
-    if 2 * np.pi % angle_radians < 1e-6:  # Ensuring the angle divides 2*pi evenly
-        for i in range(natural_number):
-            angle = i * 2 * np.pi / natural_number
-            x = radius * np.cos(angle)
-            y = radius * np.sin(angle)
-            plt.scatter(x, y, c='green', marker='x', s=100)
-
-    plt.xlim(-radius, radius)
-    plt.ylim(-radius, radius)
-    plt.gca().set_aspect('equal', adjustable='box')
     plt.show()
-    return angle_radians, natural_number
 
-# Example inputs
-blue_line_end_x = 5
-radius = 10
-
-# Calling the function with the example inputs
-radians, natural_number = draw_circle_and_compute_number_with_nodes(blue_line_end_x, radius)
-print("Radians:", radians)
-print("Natural Number:", natural_number)
+# Plotting the final corrected progression from n=3 to n=4
+plot_final_progression()
