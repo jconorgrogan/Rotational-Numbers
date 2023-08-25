@@ -20,6 +20,26 @@
    - **6 Equidistant Nodes**: Place 6 equidistant nodes around the circle at each 60° interval. These nodes represent the geometric structure arising from the original 1/2 ratio.
    - **Symmetry and Geometry**: This construction exhibits rotational symmetry and the geometric principles of division, proportion, and angle preservation.
 
+///
+### Number Representation
+Represent a number `n` as equidistant nodes on a unit circle, each with an angle:
+\[
+\theta(n) = \frac{360}{n}
+\]
+
+### Addition of 1
+To add 1 to a number `n`, use the equation:
+\[
+\theta(n+1) = \frac{360}{n} - \frac{360}{n(n+1)}
+\]
+
+### General Addition of k
+To add a positive integer `k` to a number `n`, use the equation:
+\[
+\theta(n+k) = \frac{360}{n} - k \cdot \left( \frac{360}{n(n+k)} \right)
+\]
+
+
 import matplotlib.pyplot as plt
 import numpy as np
 
