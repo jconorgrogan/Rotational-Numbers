@@ -25,6 +25,8 @@ x_intersection = \\frac{{\\sin(\\theta)}}{{\\cos(\\theta) + \\tan(\\alpha)}}
 
 This equation encapsulates the geometric relationship between the angles and the sides of the triangles formed in this construction.
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/55bd3b32-a994-4317-9904-e300894b23c0)
+A key feature of this setup: it establishes a one-to-one correspondence between the discrete set of integers \( n \) and a continuous range of irrational angles \( \theta \). In essence, it's a bijection between a subset of integers and a subset of the irrational numbers within \( (0, 2\pi) \).
+
 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/1be164ca-64bf-41f0-bb18-4620c7a25ccd)
 
