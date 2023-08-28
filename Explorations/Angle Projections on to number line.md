@@ -26,6 +26,10 @@ x_intersection = \\frac{{\\sin(\\theta)}}{{\\cos(\\theta) + \\tan(\\alpha)}}
 This equation encapsulates the geometric relationship between the angles and the sides of the triangles formed in this construction.
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/55bd3b32-a994-4317-9904-e300894b23c0)
 
+![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/1be164ca-64bf-41f0-bb18-4620c7a25ccd)
+
+![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/8a1d7548-4c58-46b5-8bca-cc6d5e971fa0)
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
