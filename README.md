@@ -27,7 +27,7 @@ Here is a visual representation: 7 (red dots, equally spaced) is a factor of 21
 
 ## 3. Patterns
 
-Displaying these numbers in linearly expanding concentric circles is an interesting way of seeing number patterns.
+Displaying these numbers in linearly expanding concentric circles is an interesting way of seeing number patterns. They even find a unique way to find pi- Each of the below horizontal lines are multiples of pi on the y axis! See https://github.com/jconorgrogan/Grogans-Slice-of-Pi/tree/main
 
 Here are the first 500 numbers (2-500)
 <img width="848" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/8b873bd5-5907-49ec-972b-9bdb1355d6e4">
@@ -37,7 +37,7 @@ Here are the first 500 numbers (2-500)
 
 ## 3. Operations in RNT
 
-RNT offers a geometric perspective on the relationships between numbers and mathematical operations.
+RNT offers a geometric perspective on the relationships between numbers and mathematical operations. 
 
 ### Addition of 1
 To add 1 to a number `n`, use the equation:
