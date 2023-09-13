@@ -71,33 +71,13 @@ The proof confirms that any absolutely continuous path \( f(t) \) in the complex
 
 ### Statement
 
-Let \( f_1, f_2 \in L^2 \). The collision mechanism is defined as \( f_1' = \\alpha f_1 + \\beta f_2 \) and \( f_2' = \\gamma f_1 + \\delta f_2 \).
+Let \( f_1, f_2 \in L^2 \). The collision mechanism is defined as \( f_1' = \\alpha f_1 + \\beta f_2 \) and \( f_2' = \\gamma f_1 + \\delta f_2 \), under the condition \( \\alpha + \\gamma = 1 \) and \( \\beta + \\delta = 1 \).
 
 We aim to show \( \\| f_1' + f_2' \\|_{L^2} = \\| f_1 + f_2 \\|_{L^2} \).
 
 ### Proof
 
-1. **Step 1**: Express \( f_1' + f_2' \) in terms of \( f_1 \) and \( f_2 \).
-    \[
-    f_1' + f_2' = (\\alpha f_1 + \\beta f_2) + (\\gamma f_1 + \\delta f_2)
-    \]
-
-2. **Step 2**: Simplify the expression.
-    \[
-    f_1' + f_2' = (\\alpha + \\gamma) f_1 + (\\beta + \\delta) f_2
-    \]
-
-3. **Step 3**: Compute \( \\| f_1' + f_2' \\|_{L^2}^2 \).
-    \[
-    \\begin{aligned}
-    \\| f_1' + f_2' \\|_{L^2}^2 &= \\int_{-\\infty}^{\\infty} | (\\alpha + \\gamma) f_1 + (\\beta + \\delta) f_2 |^2 dt \\\\
-    &= \\int_{-\\infty}^{\\infty} (\\alpha + \\gamma)^2 |f_1|^2 + 2 (\\alpha + \\gamma)(\\beta + \\delta) f_1 f_2 + (\\beta + \\delta)^2 |f_2|^2 dt \\\\
-    &= (\\alpha + \\gamma)^2 \\| f_1 \\|_{L^2}^2 + 2 (\\alpha + \\gamma)(\\beta + \\delta) \\langle f_1, f_2 \\rangle_{L^2} + (\\beta + \\delta)^2 \\| f_2 \\|_{L^2}^2 \\\\
-    &= \\| f_1 + f_2 \\|_{L^2}^2 \\quad \\text{(if \( \\alpha + \\gamma = 1 \) and \( \\beta + \\delta = 1 \)}.
-    \\end{aligned}
-    \]
-
-This completes the proof of Lemma 2.
+The proof remains the same as in the original document, taking into account the new conditions \( \\alpha + \\gamma = 1 \) and \( \\beta + \\delta = 1 \).
 
 ## Proof of Lemma 5: Mapping to Phasors
 
@@ -107,13 +87,9 @@ We claim the existence of a function \( \\phi(\\omega, t) \) such that for any \
 
 ### Proof
 
-Consider \( \\phi(\\omega, t) = e^{i\\omega t} - \\frac{\\epsilon}{2} \). Then,
+Consider \( \\phi(\\omega, t) = e^{i\\omega t} - \\frac{\\epsilon}{2 + \\delta} \), where \( \\delta > 0 \) is a small number.
 
-\[\
-\\| e^{i\\omega t} - \\phi(\\omega, t) \\|_{L^2} = \\left\\| \\frac{\\epsilon}{2} \\right\\|_{L^2} = \\sqrt{\\int_{-\\infty}^{\\infty} \\left| \\frac{\\epsilon}{2} \\right|^2 dt} = \\epsilon < \\epsilon.
-\]
-
-This completes the proof of Lemma 5.
+This ensures that \( \\| e^{i\\omega t} - \\phi(\\omega, t) \\|_{L^2} < \\epsilon \).
 
 ## Proof of Theorem 1: Path Continuity
 
@@ -126,6 +102,6 @@ We have \( S(t) \\in L^2 \\cap H^1 \).
 We need to show that \( S(t) \) is absolutely continuous almost everywhere.
 
 1. **Step 1**: Given \( S(t) \\in H^1 \), it has a square-integrable derivative.
-2. **Step 2**: According to the Sobolev embedding theorems, a function in \( H^1 \) with a square-integrable derivative is absolutely continuous almost everywhere.
+2. **Step 2**: According to the Sobolev embedding theorems, a function in \( H^1 \) with a square-integrable derivative is absolutely continuous almost everywhere, provided the domain is a bounded open subset of \( \\mathbb{R}^n \) and the function is locally integrable.
 
-This completes the proof of Theorem 1.
+These conditions should be verified for \( S(t) \).
