@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phasor Simulation</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+        #phasorSumCanvas {
+            border: 1px solid black;
+        }
+        #waveformCanvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="number" id="numberOfPhasors" placeholder="Number of Phasors">
+        <button id="generateInputs">Generate Inputs</button>
+        <button id="startSimulationButton">Run Simulation</button>
+        <button id="zoomOutButton">Zoom Out</button>
+        <button id="zoomInButton">Zoom In</button>
+        <button id="clearCanvasButton">Clear Canvas</button>
+        <button id="resetButton">Reset Simulation</button>
+    </div>
+    <div id="phasorInputs">
+    </div>
+    <canvas id="phasorCanvas"></canvas>
+    <canvas id="phasorSumCanvas"></canvas>
+    <canvas id="waveformCanvas"></canvas> <!-- Added a waveform canvas -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const canvas = document.getElementById('phasorCanvas');
+            const ctx = canvas.getContext('2d');
+            const phasorSumCanvas = document.getElementById('phasorSumCanvas');
+            const sumCtx = phasorSumCanvas.getContext('2d');
+            const waveformCanvas = document.getElementById('waveformCanvas'); // Added waveform canvas
+            const waveformCtx = waveformCanvas.getContext('2d'); // Added waveform canvas context
+            const phasorInputs = document.getElementById('phasorInputs');
+            const generateInputsButton = document.getElementById('generateInputs');
+            const startSimulationButton = document.getElementById('startSimulationButton');
+            const resetButton = document.getElementById('resetButton');
+            const zoomOutButton = document.getElementById('zoomOutButton');
+            const zoomInButton = document.getElementById('zoomInButton');
+            const clearCanvasButton = document.getElementById('clearCanvasButton');
+            const numberOfPhasorsInput = document.getElementById('numberOfPhasors');
+            
+            let zoomFactor = 1;
+            let zoomFactorSumCanvas = 1;
+
+            canvas.width = 800;
+            canvas.height = 400;
+            phasorSumCanvas.width = 800;
+            phasorSumCanvas.height = 400;
+            waveformCanvas.width = 800; // Set waveform canvas width
+            waveformCanvas.height = 200; // Set waveform canvas height
+            let lastTimestamp = 0;
+            let isSimulationRunning = false;
+
+            let phasors = [];
+            let phasorSumPath = [];
+            let waveformData = []; // Array to store waveform data
+
+            function populateInitialInputs() {
+                phasorInputs.innerHTML = '';
+                phasors.forEach((phasor) => {
+                    const newInputSet = document.createElement('div');
+                    newInputSet.innerHTML = `
+                        <input type="number" class="angleInput" placeholder="Angle" value="${phasor.angle}">
+                        <input type="number" class="speedInput" placeholder="Speed" value="${phasor.speed}">
+                    `;
+                    phasorInputs.appendChild(newInputSet);
+                });
+            }
+
+            function drawUnitCircle() {
+                ctx.beginPath();
+                ctx.arc(canvas.width / 2, canvas.height / 2, 200, 0, Math.PI * 2);
+                ctx.strokeStyle = 'black';
+                ctx.stroke();
+            }
+
+            function drawVector(x1, y1, x2, y2, color, ctx, lineWidth) {
+                ctx.beginPath();
+                ctx.moveTo(x1, y1);
+                ctx.lineTo(x2, y2);
+                ctx.strokeStyle = color;
+                ctx.lineWidth = lineWidth;
+                ctx.stroke();
+            }
+
+            function drawPhasors(phasors) {
+                phasors.forEach(phasor => {
+                    const x = (canvas.width / 2) + (200 * zoomFactor) * Math.cos(Math.PI * phasor.angle / 180);
+                    const y = (canvas.height / 2) - (200 * zoomFactor) * Math.sin(Math.PI * phasor.angle / 180);
+                    ctx.beginPath();
+                    ctx.moveTo(canvas.width / 2, canvas.height / 2);
+                    ctx.lineTo(x, y);
+                    ctx.strokeStyle = phasor.color;
+                    ctx.stroke();
+                });
+            }
+
+            function drawPhasorSum(phasors) {
+                let sumX = 0;
+                let sumY = 0;
+
+                phasors.forEach(phasor => {
+                    const x = (200 * zoomFactorSumCanvas) * Math.cos(Math.PI * phasor.angle / 180);
+                    const y = -(200 * zoomFactorSumCanvas) * Math.sin(Math.PI * phasor.angle / 180);
+                    sumX += x;
+                    sumY += y;
+                });
+
+                drawVector(canvas.width / 2, canvas.height / 2, (canvas.width / 2) + sumX, (canvas.height / 2) + sumY, '#FF0000', sumCtx, 2);
+            }
+
+            function drawPath(path, ctx) {
+                ctx.beginPath();
+                ctx.moveTo((canvas.width / 2) + (path[0].x * zoomFactorSumCanvas), (canvas.height / 2) + (path[0].y * zoomFactorSumCanvas));
+                for (let i = 1; i < path.length; i++) {
+                    ctx.lineTo((canvas.width / 2) + (path[i].x * zoomFactorSumCanvas), (canvas.height / 2) + (path[i].y * zoomFactorSumCanvas));
+                }
+                ctx.strokeStyle = '#FF0000';
+                ctx.lineWidth = 1;
+                ctx.stroke();
+            }
+
+            function resolveElasticCollision(phasor1, phasor2) {
+                const speed1 = phasor1.speed;
+                const speed2 = phasor2.speed;
+                phasor1.speed = speed2;
+                phasor2.speed = speed1;
+            }
+
+            function resolveCollisions(phasors, dt) {
+                const dtSub = dt / 100;
+                for (let step = 0; step < 100; step++) {
+                    phasors.forEach(phasor => {
+                        phasor.angle += phasor.speed * dtSub * 0.001;
+                        phasor.angle = (phasor.angle + 360) % 360;
+                    });
+
+                    for (let i = 0; i < phasors.length; i++) {
+                        for (let j = i + 1; j < phasors.length; j++) {
+                            const phasor1 = phasors[i];
+                            const phasor2 = phasors[j];
+                            let deltaAngle = Math.abs(phasor1.angle - phasor2.angle);
+                            const dynamicCollisionThreshold = 0.5 + 0.01 * (Math.abs(phasor1.speed) + Math.abs(phasor2.speed));
+
+                            if (deltaAngle > 180) deltaAngle = 360 - deltaAngle;
+
+                            if (deltaAngle <= dynamicCollisionThreshold) {
+                                resolveElasticCollision(phasor1, phasor2);
+                            }
+                        }
+                    }
+                }
+            }
+
+            function drawWaveform(waveformData) {
+                waveformCtx.clearRect(0, 0, waveformCanvas.width, waveformCanvas.height);
+
+                waveformCtx.beginPath();
+                waveformCtx.moveTo(0, waveformCanvas.height / 2);
+
+                waveformData.forEach((dataPoint, index) => {
+                    const x = (index / waveformData.length) * waveformCanvas.width;
+                    const y = (dataPoint / 100) * (waveformCanvas.height / 2);
+                    waveformCtx.lineTo(x, (waveformCanvas.height / 2) - y);
+                });
+
+                waveformCtx.strokeStyle = 'blue';
+                waveformCtx.lineWidth = 2;
+                waveformCtx.stroke();
+            }
+
+            function animate(timestamp) {
+                if (isSimulationRunning) {
+                    const dt = timestamp - lastTimestamp;
+                    lastTimestamp = timestamp;
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    sumCtx.clearRect(0, 0, phasorSumCanvas.width, phasorSumCanvas.height);
+
+                    drawUnitCircle();
+                    resolveCollisions(phasors, dt);
+                    drawPhasors(phasors);
+
+                    const sumX = phasors.reduce((sum, phasor) => sum + (200 * zoomFactorSumCanvas) * Math.cos(Math.PI * phasor.angle / 180), 0);
+                    const sumY = phasors.reduce((sum, phasor) => sum - (200 * zoomFactorSumCanvas) * Math.sin(Math.PI * phasor.angle / 180), 0);
+                    phasorSumPath.push({ x: sumX, y: sumY });
+
+                    drawPhasorSum(phasors);
+
+                    drawPath(phasorSumPath, sumCtx);
+
+                    // Randomly select two adjacent phasors to create the waveform
+                    const randomIndex = Math.floor(Math.random() * (phasors.length - 1));
+                    const phasor1 = phasors[randomIndex];
+                    const phasor2 = phasors[randomIndex + 1];
+                    const deltaAngle = Math.abs(phasor1.angle - phasor2.angle);
+
+                    // Store the difference in angles in the waveform data
+                    waveformData.push(deltaAngle);
+
+                    // Limit the waveform data to a certain number of points for visualization
+                    if (waveformData.length > 200) {
+                        waveformData.shift();
+                    }
+
+                    drawWaveform(waveformData);
+                }
+
+                requestAnimationFrame(animate);
+            }
+
+            generateInputsButton.addEventListener('click', () => {
+                const numberOfPhasors = parseInt(numberOfPhasorsInput.value);
+                if (!isNaN(numberOfPhasors) && numberOfPhasors > 0) {
+                    // Generate even integers and speeds between -100 and 100
+                    phasors = Array.from({ length: numberOfPhasors }, () => ({
+                        angle: Math.floor(Math.random() * 50) * 4, // Generate even integers
+                        speed: Math.floor(Math.random() * 201) - 100, // Generate speeds between -100 and 100
+                        mass: 1.0,
+                        color: '#' + Math.floor(Math.random() * 16777215).toString(16),
+                    }));
+                    populateInitialInputs();
+                    isSimulationRunning = false;
+                    waveformData = []; // Clear waveform data when inputs are regenerated
+                } else {
+                    alert("Please enter a valid number of phasors.");
+                }
+            });
+
+            startSimulationButton.addEventListener('click', () => {
+                isSimulationRunning = true; // Start simulation when the button is clicked
+                const angleInputs = document.querySelectorAll('.angleInput');
+                const speedInputs = document.querySelectorAll('.speedInput');
+
+                phasors = Array.from(angleInputs).map((angleInput, i) => ({
+                    angle: parseFloat(angleInput.value),
+                    speed: parseFloat(speedInputs[i].value),
+                    mass: 1.0,
+                    color: '#' + Math.floor(Math.random() * 16777215).toString(16),
+                }));
+
+                if (phasors.some(p => isNaN(p.angle) || isNaN(p.speed))) {
+                    alert("Please enter valid angles and speeds for all phasors.");
+                    isSimulationRunning = false; // Pause simulation if invalid inputs
+                    return;
+                }
+
+                populateInitialInputs();
+            });
+
+            zoomOutButton.addEventListener('click', () => {
+                if (zoomFactor > 0.1) {
+                    zoomFactor -= 0.1;
+                    zoomFactorSumCanvas -= 0.1; // Adjust zoom for the second canvas
+                }
+            });
+
+            // Add event listener for the Clear Canvas button
+            clearCanvasButton.addEventListener('click', () => {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                sumCtx.clearRect(0, 0, phasorSumCanvas.width, phasorSumCanvas.height);
+                phasorSumPath = [];
+            });
+
+            // Add event listener for the Zoom In button
+            zoomInButton.addEventListener('click', () => {
+                zoomFactor += 0.1;
+                zoomFactorSumCanvas += 0.1;
+            });
+
+            resetButton.addEventListener('click', () => {
+                isSimulationRunning = false;
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                sumCtx.clearRect(0, 0, phasorSumCanvas.width, phasorSumCanvas.height);
+                waveformCtx.clearRect(0, 0, waveformCanvas.width, waveformCanvas.height); // Clear waveform canvas
+                phasors = [];
+                phasorSumPath = [];
+                phasorInputs.innerHTML = '';
+                zoomFactor = 1;
+                zoomFactorSumCanvas = 1;
+                numberOfPhasorsInput.value = '';
+                waveformData = []; // Clear waveform data
+            });
+
+            requestAnimationFrame(animate);
+        });
+    </script>
+</body>
+</html>
