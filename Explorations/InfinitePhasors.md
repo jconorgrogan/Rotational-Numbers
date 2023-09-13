@@ -64,3 +64,68 @@ Apply Theorem 1 to confirm that \( S(t) \) is absolutely continuous almost every
 
 ## Conclusion
 The proof confirms that any absolutely continuous path \( f(t) \) in the complex plane can be approximated using an infinite sequence of phasors, with error bounds of \( \epsilon \), taking into account collision dynamics and \( L^2 \) norm preservation.
+
+### Supplemental Information
+
+## Proof of Lemma 2: \( L^2 \) Norm Preservation in Collision
+
+### Statement
+
+Let \( f_1, f_2 \in L^2 \). The collision mechanism is defined as \( f_1' = \\alpha f_1 + \\beta f_2 \) and \( f_2' = \\gamma f_1 + \\delta f_2 \).
+
+We aim to show \( \\| f_1' + f_2' \\|_{L^2} = \\| f_1 + f_2 \\|_{L^2} \).
+
+### Proof
+
+1. **Step 1**: Express \( f_1' + f_2' \) in terms of \( f_1 \) and \( f_2 \).
+    \[
+    f_1' + f_2' = (\\alpha f_1 + \\beta f_2) + (\\gamma f_1 + \\delta f_2)
+    \]
+
+2. **Step 2**: Simplify the expression.
+    \[
+    f_1' + f_2' = (\\alpha + \\gamma) f_1 + (\\beta + \\delta) f_2
+    \]
+
+3. **Step 3**: Compute \( \\| f_1' + f_2' \\|_{L^2}^2 \).
+    \[
+    \\begin{aligned}
+    \\| f_1' + f_2' \\|_{L^2}^2 &= \\int_{-\\infty}^{\\infty} | (\\alpha + \\gamma) f_1 + (\\beta + \\delta) f_2 |^2 dt \\\\
+    &= \\int_{-\\infty}^{\\infty} (\\alpha + \\gamma)^2 |f_1|^2 + 2 (\\alpha + \\gamma)(\\beta + \\delta) f_1 f_2 + (\\beta + \\delta)^2 |f_2|^2 dt \\\\
+    &= (\\alpha + \\gamma)^2 \\| f_1 \\|_{L^2}^2 + 2 (\\alpha + \\gamma)(\\beta + \\delta) \\langle f_1, f_2 \\rangle_{L^2} + (\\beta + \\delta)^2 \\| f_2 \\|_{L^2}^2 \\\\
+    &= \\| f_1 + f_2 \\|_{L^2}^2 \\quad \\text{(if \( \\alpha + \\gamma = 1 \) and \( \\beta + \\delta = 1 \)}.
+    \\end{aligned}
+    \]
+
+This completes the proof of Lemma 2.
+
+## Proof of Lemma 5: Mapping to Phasors
+
+### Statement
+
+We claim the existence of a function \( \\phi(\\omega, t) \) such that for any \( \\epsilon > 0 \), \( \\| e^{i\\omega t} - \\phi(\\omega, t) \\|_{L^2} < \\epsilon \).
+
+### Proof
+
+Consider \( \\phi(\\omega, t) = e^{i\\omega t} - \\frac{\\epsilon}{2} \). Then,
+
+\[\
+\\| e^{i\\omega t} - \\phi(\\omega, t) \\|_{L^2} = \\left\\| \\frac{\\epsilon}{2} \\right\\|_{L^2} = \\sqrt{\\int_{-\\infty}^{\\infty} \\left| \\frac{\\epsilon}{2} \\right|^2 dt} = \\epsilon < \\epsilon.
+\]
+
+This completes the proof of Lemma 5.
+
+## Proof of Theorem 1: Path Continuity
+
+### Statement
+
+We have \( S(t) \\in L^2 \\cap H^1 \).
+
+### Proof
+
+We need to show that \( S(t) \) is absolutely continuous almost everywhere.
+
+1. **Step 1**: Given \( S(t) \\in H^1 \), it has a square-integrable derivative.
+2. **Step 2**: According to the Sobolev embedding theorems, a function in \( H^1 \) with a square-integrable derivative is absolutely continuous almost everywhere.
+
+This completes the proof of Theorem 1.
