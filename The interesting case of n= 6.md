@@ -50,5 +50,7 @@ For a circle to emerge from the partitioning of \( \mathcal{U} \) in the manner 
 ### Interpretation
 
 The circle's unique properties of uniformity and symmetry are emergent phenomena arising from the specific geometric arrangement of equidistant segments within \( \mathcal{U} \), satisfying \( k \cdot D = 2R \) for \( n = 2, 6, \text{ or } \infty \).
-
+Or in other words, emerging from a one-dimensional string 
+�
+U under certain partitioning conditions. T
 
