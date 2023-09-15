@@ -23,3 +23,32 @@ The sine function has a range between -1 and 1, so the only integer values of \(
 - For \( k = 2 \), we get \( \sin\left(\frac{\pi}{n}\right) = \frac{1}{2} \), which leads to \( n = 6 \).
 
 No other integer values for \( k \) will satisfy the equation, hence these are the only integer solutions for \( n \), besides the limit case of \( n = \infty \).
+
+
+You can go even further. Imagine instead of equidisdant nodes as chords you just have a set length of each node. Now, imagine you want to maintain that length from the opposite end. in other words, you have to maintain distance away. but you can bend the dimension you want. Something interesting happends at exactly this n=6/R= ratio of x. You can maintain length in different dimensions, and have no leftovers/modolo.  
+
+## The String Universe-Circle Theorem
+
+### Definitions and Notations
+
+1. Let \( \mathcal{U} \) be a one-dimensional string of infinite length.
+2. Let \( R \) be a positive real number representing the radius of a circle.
+3. Define \( D \) as a segment length in \( \mathcal{U} \).
+4. Let \( k \) be an integer, and let \( 2R \) be partitioned into \( k \) equidistant segments each of length \( D \) such that \( k \cdot D = 2R \).
+5. Let \( n \) be the number of such segments \( D \) that are chords of the circle with radius \( R \).
+
+### Theorem
+
+For a circle to emerge from the partitioning of \( \mathcal{U} \) in the manner described, \( n \) must be \( 2 \), \( 6 \), or \( \infty \).
+
+#### Conditions
+
+1. **For \( n = 2 \)**: \( D = 2R \) and \( k = 1 \).
+2. **For \( n = 6 \)**: \( D = R \) and \( k = 2 \), corresponding to the inscribed hexagon.
+3. **For \( n = \infty \)**: \( D = 0 \) and \( k = \infty \).
+
+### Interpretation
+
+The circle's unique properties of uniformity and symmetry are emergent phenomena arising from the specific geometric arrangement of equidistant segments within \( \mathcal{U} \), satisfying \( k \cdot D = 2R \) for \( n = 2, 6, \text{ or } \infty \).
+
+
