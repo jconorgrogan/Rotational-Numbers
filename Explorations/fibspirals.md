@@ -1,3 +1,138 @@
+We investigate an encoding function:
+
+f:R→R^2
+
+, which aims to map each point
+
+x
+
+on an infinite real line to a point
+
+(x', y')
+
+in a 2D plane. This function utilizes the Fibonacci sequence to dictate both the lengths of segments on the real line and the angles for rotation in the 2D plane. Formally, the function is defined as:
+
+f(x) = (F_n * L cos(F_n × α), F_n * L sin(F_n × α))
+
+Here,
+
+L
+
+is the distance from the origin to the point
+
+x
+
+,
+
+F_n
+
+is the
+
+n
+
+-th Fibonacci number corresponding to the segment containing
+
+x
+
+, and
+
+α
+
+is an irrational multiple of
+
+π
+
+.
+
+**Injectivity (One-to-One)**
+
+**Different Segments:** For points
+
+x_1
+
+and
+
+x_2
+
+that lie in segments determined by different Fibonacci numbers
+
+F_n1
+
+and
+
+F_n2
+
+, the lengths and rotation angles will inherently differ, thereby ensuring
+
+f(x_1) ≠ f(x_2).
+
+**Same Segment:** For points
+
+x_1
+
+and
+
+x_2
+
+within the same segment, they will share the same
+
+F_n
+
+but possess different lengths
+
+L_1
+
+and
+
+L_2
+
+from the origin. This leads to different
+
+r
+
+-values in polar coordinates, confirming
+
+f(x_1) ≠ f(x_2).
+
+**Surjectivity (Onto)**
+
+The use of an irrational multiple of
+
+α
+
+creates a spiral that does not overlap perfectly. However, to rigorously claim surjectivity, we would need to prove that the set of points
+
+f(x)
+
+is dense in
+
+R^2
+
+. This involves showing that for every point
+
+P
+
+in
+
+R^2
+
+and for every
+
+ε > 0
+
+, there exists a point
+
+Q
+
+on the spiral such that
+
+d(P, Q) < ε.
+
+This density argument is a non-trivial mathematical task requiring further rigorous proof.
+
+
+
+
 ## Fibonacci Spiral and the Golden Ratio
 
 Let \( F_n \) denote the \( n \)-th Fibonacci number, defined as follows:
