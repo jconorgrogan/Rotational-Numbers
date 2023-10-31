@@ -29,3 +29,31 @@ The torus is constructed by integrating discrete transformations from \( SL(2,\\
 - Weierstrass \( \\wp \)-function
 - Modular Forms and \( j \)-invariant
 An elliptic curve can emerge as a natural extension of the torus formed by \( SL(2,\\mathbb{Z}) \) and \( SL(2,\\mathbb{R}) \) transformations. The relationship between elliptic curves and tori can be understood through the Weierstrass \( \\wp \)-function, which parameterizes points on an elliptic curve in terms of a lattice. This lattice is the fundamental domain of a torus, thereby linking elliptic curves to the torus. Furthermore, the \( j \)-invariant provides a bridge between the torus and elliptic curves, enriching the structures in which the elementary sets \( \\emptyset \) and \( \\{ \\emptyset \\} \) can be studied.
+
+
+###Code 
+# Step 1: Define a 2D state vector |psi>
+psi = np.array([[1], [0]])
+
+# Step 2: Define a Hermitian operator L (Pauli-z matrix with non-standard eigenvalues)
+L = np.array([[2, 0], [0, -2]])  # Non-standard eigenvalues
+
+# Step 3: Define non-standard SL(2, R) and SL(2, Z) matrices
+# Non-standard SL(2, R) matrix
+SL2R_matrix = np.array([[1.5, -0.5], [0.5, 1.5]])
+
+# Non-standard SL(2, Z) matrix
+SL2Z_matrix = np.array([[2, 1], [1, 1]])
+
+# Step 4: Apply transformations
+# First apply SL(2, R)
+psi_temp = np.dot(SL2R_matrix, psi)
+
+# Then apply SL(2, Z)
+psi_prime = np.dot(SL2Z_matrix, psi_temp)
+
+# Step 5: Check the eigenvalues of psi_prime when acted upon by L
+eigenvalue_result = np.dot(L, psi_prime)
+
+eigenvalue_result
+
