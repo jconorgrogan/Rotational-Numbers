@@ -29,4 +29,3 @@ The torus is constructed by integrating discrete transformations from \( SL(2,\\
 - Weierstrass \( \\wp \)-function
 - Modular Forms and \( j \)-invariant
 An elliptic curve can emerge as a natural extension of the torus formed by \( SL(2,\\mathbb{Z}) \) and \( SL(2,\\mathbb{R}) \) transformations. The relationship between elliptic curves and tori can be understood through the Weierstrass \( \\wp \)-function, which parameterizes points on an elliptic curve in terms of a lattice. This lattice is the fundamental domain of a torus, thereby linking elliptic curves to the torus. Furthermore, the \( j \)-invariant provides a bridge between the torus and elliptic curves, enriching the structures in which the elementary sets \( \\emptyset \) and \( \\{ \\emptyset \\} \) can be studied.
-'''
