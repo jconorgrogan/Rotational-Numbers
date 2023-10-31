@@ -1,7 +1,7 @@
 # The Set-Theoretic Universe Theory
 
 ## Objective:
-The objective of this theory is to explore the mathematical and geometrical implications of a universe predicated on two elementary sets: the empty set \( \\emptyset \) and its singleton \( \\{ \\emptyset \\} \). The primary goal is to investigate how their relationship remains invariant under various mathematical transformations. Further, the theory aims to uncover the complex behavior that emerges when combining discrete and continuous transformation groups.
+The objective of this theory is to explore the mathematical and geometrical implications of a universe predicated on two elementary sets: the empty set and its singleton. The primary goal is to investigate how their relationship remains invariant under various mathematical transformations. Further, the theory aims to uncover the complex behavior that emerges when combining discrete and continuous transformation groups.
 
 ## Components:
 
