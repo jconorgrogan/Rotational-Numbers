@@ -11,6 +11,12 @@ The position of a node representing the `k`-th number is determined by the angle
 
 ![equation](https://latex.codecogs.com/gif.latex?\theta_k&space;=&space;\frac{2\pi(k-1)}{n})
 
+Additionally, one could generate this via the expession \( (1+x)^{1/x} \) . For a natural number \( x \), the expression \( (1+x)^{1/x} \) computes the \( x \)th root of \( 1+x \).
+This will yield \( x \) distinct roots on the complex plane, spaced equally on a circle. For instance, this is the result for x=4
+<img width="245" alt="image" src="https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/a9cd9381-4d0b-41d3-82bd-4765db116147">
+
+
+
 ## 2. Prime and Factor Identification via Rotational Overlap
 
 This geometric representation leads to an intuitive method for discerning prime numbers and factorizing composites.
