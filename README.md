@@ -1,9 +1,8 @@
 
 ## 1. Introduction
+ 
 
-Rotational Number Theory (RNT) is an attempt to find a novel way to visualize mathmatics (And a real way to find prime factors!)  
-
-In RNT, the entire set of natural numbers is compactified onto a circle, analogous to the one-point compactification of the real line. This forms a topological space homeomorphic to a circle, with infinity represented as a single point. Each natural number `n` is depicted by `n` equidistant nodes on a unit circle.
+In this visualization, entire set of natural numbers is compactified onto a circle, analogous to the one-point compactification of the real line. This forms a topological space homeomorphic to a circle, with infinity represented as a single point. Each natural number `n` is depicted by `n` equidistant nodes on a unit circle.
 
 ![image](https://github.com/jconorgrogan/Grogan-Rotational-Number-Theory/assets/130090573/d94798c6-aa7c-4ece-84b2-6a17fab5192b)
 
